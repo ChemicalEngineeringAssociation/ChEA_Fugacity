@@ -11,7 +11,7 @@ import "./index.css";
 import Navbar from './Navbar/Navbar';
 import Home from './Home/Home';
 import Footer from './Footer/Footer';
-import Sponser from './sponsor/Sponsor';
+import Sponsor from './sponsor/Sponsor';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/sponser" element={ <Sponser/> }></Route>
+        <Route path="/sponsors" element={ <Sponsor/> }></Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer/>

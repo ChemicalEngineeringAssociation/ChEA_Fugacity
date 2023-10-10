@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="flex justify-center items-center ">
+      <div className="flex justify-center items-center">
         <nav className="flex h-16 z-10
          justify-between items-center bg-gradient-to-b from-[#c5c8d0] to-[#7d9ce6]  
             fixed top-0  w-full

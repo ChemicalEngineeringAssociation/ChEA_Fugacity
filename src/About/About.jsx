@@ -28,7 +28,7 @@ const About = () => {
       <div className="">
         <h1 className="text-center text-2xl font-bold text-slate-100 underline decoration-solid ">Our Vision</h1>
           <div className="p-10 text-slate-300 text-md">
-            <div className="text-slate-200">
+            <div className="text-slate-200 text-justify">
               <p>Fugacity is the departmental fest of the Chemical Engineering Department, IIT Kharagpur, organised by the Chemical Engineering Association and Kharagpur Regional Chapter, Indian Institute of Chemical Engineers. The fest is to be held on 12th and 13th February this year in a virtual mode. Over 1500 enthusiastic participants from various IITs, NITs and other reputed colleges across the country will be competing in an array of events lined up over the two days. Esteemed Professors across the globe, Industry Experts and emerging Researchers will grace the fest will their insightful lectures and warm presence. We cordially invite you to our fest and request you to support our endeavours</p>
             </div>
           </div>

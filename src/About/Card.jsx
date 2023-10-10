@@ -10,7 +10,7 @@ export default function Card(props) {
           </div>
           <div className="p-5 text-center">
             <h3 className="font-bold text-slate-50 sm:text-lg md:text-xl p-2">{props.title}</h3>
-            <p className='text-slate-200'>
+            <p className='text-slate-200 text-justify'>
             {props.description}
             {/* <a className='text-sm text-slate-400' href="/"> Read More...</a> */}
             </p>

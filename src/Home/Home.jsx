@@ -4,7 +4,7 @@ import About from "../About/About";
 import './Home.css'
 const Home = () => {
   return (
-    <div id="home">
+    <div id="home" className="">
       <section className="mt-16 h-[100vh] md:h-[80vh]  flex justify-center items-center bg-[#010527]">
         <div className="flex w-full h-[90%] flex-col md:flex-row justify-around">
           <div className="flex justify-center items-center flex-col  h-full sm:w-full md:w-1/2 p-3  text-center">

@@ -8,8 +8,8 @@ export const NavItem=[
     href:'/'
   },
   {
-    title:'Sponser',
-    href:'/sponser'
+    title:'Sponsors',
+    href:'/sponsors'
   },
   {
     title:'Merchandise',
