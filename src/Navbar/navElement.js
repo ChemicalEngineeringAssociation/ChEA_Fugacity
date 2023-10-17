@@ -5,7 +5,7 @@ export const NavItem=[
   },
   {
     title:'Events',
-    href:'/'
+    href:'/events'
   },
   {
     title:'Sponsors',
@@ -21,6 +21,6 @@ export const NavItem=[
   },
   {
     title:'Contact Us',
-    href:"#footer"
+    href:"/contact"
   },
 ]
