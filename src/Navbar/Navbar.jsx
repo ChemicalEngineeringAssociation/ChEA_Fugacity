@@ -38,7 +38,7 @@ const Navbar = () => {
           <ul className="hidden text-[#010527] md:flex flex-col md:flex-row flex-1 justify-evenly items-center ">
             {
               NavItem.map((item) => (
-                <li className={`${pathname.hash === item.href ? 'underline' : ''} font-semibold transition duration-2000 hover:underline`}>
+                <li className={`${pathname.pathname === item.href ? 'underline font-bold' : 'font-semibold'}  transition duration-2000 hover:underline`}>
                   <Link to={item.href} className="text-lg">
                     {item.title}
                   </Link>

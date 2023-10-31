@@ -5,7 +5,7 @@ export const NavItem=[
   },
   {
     title:'Events',
-    href:'/'
+    href:'/events'
   },
   {
     title:'Sponsors',
@@ -17,10 +17,10 @@ export const NavItem=[
   },
   {
     title:'Register Here',
-    href:'/'
+    href:'/register'
   },
   {
     title:'Contact Us',
-    href:"#footer"
+    href:"/contact"
   },
 ]

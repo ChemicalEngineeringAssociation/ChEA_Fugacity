@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Card(props) {
   return (
-    <div className="flex justify-center bg-[#49496d] rounded-xl m-2 items-center flex-col">
+    <div className="flex justify-center bg-slate-800 rounded-xl m-2 items-center flex-col">
           <div className="mt-5">
             <img src={props.logo} alt="" className="object-fill bg-white"
              width={200}

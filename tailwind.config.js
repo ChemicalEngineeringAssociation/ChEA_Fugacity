@@ -2,11 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  theme: {
-    theme: {
+  theme:  {
       extend: {
+        
+        fontFamily: {
+          'avenir': ['Avenir', 'sans-serif']
+        },
       }
-    },
   },
   plugins: [],
 }
