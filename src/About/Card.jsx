@@ -4,7 +4,7 @@ export default function Card(props) {
   return (
     <div className="flex justify-center bg-slate-800 rounded-xl m-2 items-center flex-col">
           <div className="mt-5">
-            <img src={props.logo} alt="" className="object-fill bg-white"
+            <img loading='lazy' src={props.logo} alt="" className="object-fill bg-white"
              width={200}
               />
           </div>

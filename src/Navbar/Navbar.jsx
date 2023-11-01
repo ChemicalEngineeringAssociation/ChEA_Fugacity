@@ -28,18 +28,16 @@ const Navbar = () => {
             </h1>
           </Link>
           {/* Mobile menu */}
-          {
-            !isOpen &&
-            <div onClick={() => setIsOpen(true)} className="text-white md:hidden mr-4">
+          
+            <div onClick={() => setIsOpen(true)} className={`${isOpen ?'hidden':'block'} transition-all duration-300 ease-in-out text-white md:hidden mr-4`}>
               <img src={hamburger} alt="hamburger" width={40} />
             </div>
-          }
 
           <ul className="hidden text-[#010527] md:flex flex-col md:flex-row flex-1 justify-evenly items-center ">
             {
               NavItem.map((item) => (
-                <li className={`${pathname.pathname === item.href ? 'underline font-bold' : 'font-semibold'}  transition duration-2000 hover:underline`}>
-                  <Link to={item.href} className="text-lg">
+                <li className={`${pathname.pathname === item.href ? 'font-bold text-xl' : 'font-semibold text-lg'} hover:text-xl transition-all duration-300 ease-in-out`}>
+                  <Link to={item.href} className="">
                     {item.title}
                   </Link>
                 </li>
@@ -47,17 +45,16 @@ const Navbar = () => {
             }
           </ul>
         </nav>
-        {
-          isOpen &&
-          <div onClick={() => setIsOpen(false)} className="flex flex-col md:hidden z-20 w-2/3 transition-all  ease-in-out delay-100 duration-500 shadow-md min-h-screen fixed top-0 bg-slate-600 right-0">
+       
+          <div onClick={() => setIsOpen(false)} className={`${isOpen ? 'block':'hidden'} transition-all duration-300 ease-in-out flex flex-col md:hidden z-20 w-2/3 shadow-md min-h-screen fixed top-0 bg-slate-600 right-0`}>
             <div onClick={() => setIsOpen(false)} className="text-white md:hidden m-2">
               <img src={crossMark} alt="hamburger" width={30} />
             </div>
             <ul className=" text-[#010527] flex flex-col gap-2   items-center ">
               {
                 NavItem.map((item) => (
-                  <li className={`${pathname.hash === item.href ? 'underline' : ''} font-semibold transition duration-2000 hover:underline hover:translate-x-1`}>
-                    <Link to={item.href} className="text-lg">
+                  <li className={`${pathname.hash === item.href ? 'text-xl bold' : 'font-semibold text-lg'}  transition-all ease-in-out duration-300 hover:text-xl `}>
+                    <Link to={item.href} className="">
                       {item.title}
                     </Link>
                   </li>
@@ -65,7 +62,6 @@ const Navbar = () => {
               }
             </ul>
           </div>
-        }
       </div>
     </>
   );
