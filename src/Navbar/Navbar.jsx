@@ -11,11 +11,11 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-center items-center">
-        <nav className="flex h-16 z-10
-         justify-between items-center bg-gradient-to-b from-[#c5c8d0] to-[#7d9ce6]  
-            fixed top-0  w-full
-            ">
-          <Link to="/" className="text-center font-bold p-2 md:ml-6 md:mr-10 flex items-center text-[#010527] text-xl">
+        <nav className="flex h-24 z-10
+         justify-between items-center bg-lightPrimary
+         fixed top-0  w-full
+         ">
+          <Link to="/" className="text-center font-bold p-2 md:ml-6 md:mr-10 flex items-center text-darkMain font-nunito text-xl">
             <img
               className="inline rounded-full "
               src={logo}
@@ -29,14 +29,14 @@ const Navbar = () => {
           </Link>
           {/* Mobile menu */}
           
-            <div onClick={() => setIsOpen(true)} className={`${isOpen ?'hidden':'block'} transition-all duration-300 ease-in-out text-white md:hidden mr-4`}>
+            <div onClick={() => setIsOpen(true)} className={`${isOpen ?'hidden':'block'} transition-all duration-300 ease-in-out lg:hidden mr-4`}>
               <img src={hamburger} alt="hamburger" width={40} />
             </div>
 
-          <ul className="hidden text-[#010527] md:flex flex-col md:flex-row flex-1 justify-evenly items-center ">
+          <ul className="hidden font-nunito text-darkSecondary lg:flex flex-col md:flex-row flex-1 justify-evenly items-center ">
             {
               NavItem.map((item) => (
-                <li className={`${pathname.pathname === item.href ? 'font-bold text-xl' : 'font-semibold text-lg'} hover:text-xl transition-all duration-300 ease-in-out`}>
+                <li key={item.title} className={`${pathname.pathname === item.href ? 'font-bold text-2xl' : 'font-semibold text-xl'} hover:text-2xl transition-all duration-300 ease-in-out`}>
                   <Link to={item.href} className="">
                     {item.title}
                   </Link>
@@ -46,14 +46,14 @@ const Navbar = () => {
           </ul>
         </nav>
        
-          <div onClick={() => setIsOpen(false)} className={`${isOpen ? 'block':'hidden'} transition-all duration-300 ease-in-out flex flex-col md:hidden z-20 w-2/3 shadow-md min-h-screen fixed top-0 bg-slate-600 right-0`}>
-            <div onClick={() => setIsOpen(false)} className="text-white md:hidden m-2">
+          <div onClick={() => setIsOpen(false)} className={`${isOpen ? 'block':'hidden'} transition-all duration-300 ease-in-out flex flex-col lg:hidden z-20 w-2/3 shadow-md min-h-screen fixed top-0 bg-lightPrimary right-0`}>
+            <div onClick={() => setIsOpen(false)} className=" lg:hidden m-2">
               <img src={crossMark} alt="hamburger" width={30} />
             </div>
-            <ul className=" text-[#010527] flex flex-col gap-2   items-center ">
+            <ul className=" font-nunito text-darkSecondary flex flex-col gap-2   items-center ">
               {
                 NavItem.map((item) => (
-                  <li className={`${pathname.hash === item.href ? 'text-xl bold' : 'font-semibold text-lg'}  transition-all ease-in-out duration-300 hover:text-xl `}>
+                  <li key={item.title} className={`${pathname.hash === item.href ? 'text-2xl bold' : 'font-semibold text-xl'}  transition-all ease-in-out duration-300 hover:text-2xl `}>
                     <Link to={item.href} className="">
                       {item.title}
                     </Link>

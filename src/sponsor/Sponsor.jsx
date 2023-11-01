@@ -9,19 +9,19 @@ const Sponsers = () => {
   const [year, setYear] = useState(2023);
   const [isMore, setIsMore] = useState(false);
   return (
-    <div className="w-full flex flex-col justify-center items-center  mt-16 text-white bg-[#010527]">
-      <h1 className="text-center text-5xl font-bold text-white my-5">
+    <div className="w-full flex flex-col justify-center items-center  mt-24  bg-darkSecondary">
+      <h1 className="text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-5">
         Sponsors
       </h1>
       <div className="flex justify-center items-center m-5 gap-10">
         <button
-          className={`px-5 rounded-lg text-white py-2 bg-[#092e83] m-2 font-bold text-xl ${year===2022 && "underline"}`}
+          className={`px-5 rounded-lg  py-2 bg-darkPrimary text-lightPrimary m-2 font-bold text-xl ${year===2022 && "underline"}`}
           onClick={() => setYear(2022)}
         >
           2022
         </button>
         <button
-          className={`px-5 rounded-lg text-white py-2 bg-[#092e83] m-2 font-bold text-xl ${year===2023 && "underline"}`}
+          className={`px-5 rounded-lg bg-darkPrimary text-lightPrimary py-2  m-2 font-bold text-xl ${year===2023 && "underline"}`}
           onClick={() => setYear(2023)}
         >
           2023
@@ -53,11 +53,11 @@ const Sponsers = () => {
           </div>
         )}
         {year === 2023 && (
-          <div className="w-full flex flex-col justify-evenly items-center ">
+          <div className="w-full flex flex-col justify-evenly items-center text-lightSecondary font-avenir ">
             <img src={nfit} className="w-[70%]  rounded-lg " alt="sponsName" />
             {isMore ?
                 <div className="w-[70%] text-justify my-5 text-md" onClick={()=>setIsMore(false)}>
-              <p>
+              <p >
                 Navin Fluorine International Ltd (NFIL) is one of the largest
                 Indian manufacturer of fluorochemicals. It belongs to the
                 Padmanabh Mafatlal Group – one of India’s oldest industrial

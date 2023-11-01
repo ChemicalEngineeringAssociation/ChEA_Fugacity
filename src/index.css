@@ -1,6 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* src/index.css */
+
+
+.scroll-snap-x-mandatory {
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-behavior-smooth {
+  scroll-behavior: smooth;
+}
+
+.scrollbar-width-none {
+  scrollbar-width: none;
+} 
 
 *, ::after, ::before {
 	scroll-behavior: smooth;
@@ -40,4 +56,73 @@
 }
 .cardParent:hover > .backFace{
   transform: rotateY(0deg);
+}
+.eventCard{
+  display: flex;
+  padding: 0 35px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.eventCard .wrapper{
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  /* background:white; */
+}
+.eventCard .carousel{
+  display: grid;
+  grid-auto-flow:column;
+  grid-auto-columns: calc((100% / 4) - 12px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.eventCard .carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* 
+.wrapper .icon{
+  height: 40px;
+  width: 40px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+} */
+/* .wrapper .leftArrow{
+  left: -22px;
+ 
+}
+.wrapper .rightArrow{
+  right: -22px;
+} */
+ .eventShortCard{
+  height: 250px;
+  scroll-snap-align: start;
+  list-style: none;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+@media screen and (max-width: 900px){
+  .wrapper .carousel{
+    grid-auto-columns: calc((100% / 3) - 9px);
+  }
+  
+}
+@media screen and (max-width: 600px){
+  .wrapper .carousel{
+    grid-auto-columns: 100%;
+  }
 }
