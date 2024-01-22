@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { NavItem } from "./navElement";
-import logo from "../logos/logo.svg";
+import logo from "../images/logos/logo.svg";
 import hamburger from '../images/hamburger.svg'
 import crossMark from '../images/xmark.svg'
 
 const Navbar = () => {
   const pathname = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <div className="flex justify-center items-center">
@@ -15,7 +16,7 @@ const Navbar = () => {
          justify-between items-center bg-lightPrimary
          fixed top-0  w-full
          ">
-          <Link to="/" className="text-center font-bold p-2 md:ml-6 md:mr-10 flex items-center text-darkMain font-nunito text-xl">
+          <Link to="/" className="text-center font-bold p-2 md:ml-6 md:mr-10 flex items-center text-[#0A4D34] font-nunito text-xl">
             <img
               className="inline rounded-full "
               src={logo}
@@ -46,11 +47,13 @@ const Navbar = () => {
           </ul>
         </nav>
        
-          <div onClick={() => setIsOpen(false)} className={`${isOpen ? 'block':'hidden'} transition-all duration-300 ease-in-out flex flex-col lg:hidden z-20 w-2/3 shadow-md min-h-screen fixed top-0 bg-lightPrimary right-0`}>
+          <div onClick={() => setIsOpen(false)} className={`${isOpen ? 'block':'hidden'} overflow-hidden transition-display duration-1000 ease-in-out flex flex-col lg:hidden z-20 w-full shadow-md min-h-screen fixed  top-0 bg-lightPrimary/40 right-0`}>
+          <div className="bg-lightPrimary fixed top-0 right-0 w-2/3 h-full">
+
             <div onClick={() => setIsOpen(false)} className=" lg:hidden m-2">
               <img src={crossMark} alt="hamburger" width={30} />
             </div>
-            <ul className=" font-nunito text-darkSecondary flex flex-col gap-2   items-center ">
+            <ul className=" font-nunito  text-darkSecondary flex flex-col gap-2   items-center ">
               {
                 NavItem.map((item) => (
                   <li key={item.title} className={`${pathname.hash === item.href ? 'text-2xl bold' : 'font-semibold text-xl'}  transition-all ease-in-out duration-300 hover:text-2xl `}>
@@ -61,6 +64,7 @@ const Navbar = () => {
                 ))
               }
             </ul>
+          </div>
           </div>
       </div>
     </>

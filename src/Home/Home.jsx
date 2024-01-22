@@ -1,8 +1,12 @@
-import React from "react";
-import Fugacity from "../logos/Fugacity.png";
+import React, { useEffect } from "react";
+import Fugacity from "../images/logos/Fugacity.webp";
 import About from "../About/About";
 import './Home.css'
 const Home = () => {
+  useEffect(() => {
+    window.scroll(0,0)
+    
+  }, []);
   return (
     <div id="home" className="">
       <section className="mt-16 h-[100vh]  flex justify-center items-center bg-darkSecondary">
@@ -12,7 +16,7 @@ const Home = () => {
                 <h2 style={{ WebkitTextStroke: "4px #f7f7f7" }} className="text-white text-transparent text-[4.5em] md:text-[8em] absolute ">Fugacity </h2>
                 <h2  className="animatEffect text-blue-500 text-[4.5em] md:text-[8em] absolute  ">Fugacity </h2>
             </section>
-              <h2 className="text-2xl font-bold mt-6 text-darkPrimary font-avenir"> XX Feb 2023-XX Feb 2023</h2>
+              <h2 className="text-2xl font-bold mt-6 text-[#B3B3B3] font-avenir"> XX Feb 2023-XX Feb 2023</h2>
         
             <button className="mt-12 text-center">
               <a href="/" className="border-1 font-semibold text-lg border-black bg-gradient-to-b from-[#8F379E] to-[#B92E61] hover-gradient rounded-lg px-5 py-2">

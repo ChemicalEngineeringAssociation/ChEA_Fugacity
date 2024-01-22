@@ -1,19 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CardContact from './CardContact';
-
-import koushal from '../images/heads/koushal.jpg'
-import suraj from '../images/heads/suraj.jpg'
-import sikhar from '../images/heads/sikhar.jpg'
-import ankush from '../images/heads/ankush.jpg'
-import manish from '../images/heads/manish.jpg'
-import shaukat from '../images/heads/shaukat.jpg'
-import shreyash from '../images/heads/shreyash.jpg'
-import rahul from '../images/heads/rahul.jpg'
-import jeevan from '../images/heads/jeevan.jpg'
-import prakhar from '../images/heads/prakhar.jpg'
-import shivam from '../images/heads/shivam.jpg'
-import megha from '../images/heads/megha.jpg'
+import koushal from '../images/heads/koushal.webp'
+import suraj from '../images/heads/suraj.webp'
+import sikhar from '../images/heads/sikhar.webp'
+import ankush from '../images/heads/ankush.webp'
+import manish from '../images/heads/manish.webp'
+import shaukat from '../images/heads/shaukat.webp'
+import shreyash from '../images/heads/shreyash.webp'
+import rahul from '../images/heads/rahul.webp'
+import jeevan from '../images/heads/jeevan.webp'
+import prakhar from '../images/heads/prakhar.webp'
+import shivam from '../images/heads/shivam.webp'
+import megha from '../images/heads/megha.webp'
 const  ContactUs=()=> {
+  useEffect(() => {
+    window.scroll(0,0)
+    
+  }, []);
   return (
     <div className=' mt-24 w-full bg-darkSecondary pb-5 '>
       <h1 className='text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-3 p-4'>Our Team</h1>

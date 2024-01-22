@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import eventDetails from "./eventDetails";
 import EventCard from "./EventCard";
 import EventShortCard from "./EventShortCard";
 const Events = () => {
+  useEffect(() => {
+    window.scroll(0,0)
+    
+  }, []);
   return (
     <div className="mt-24  flex flex-col justify-center items-center bg-darkSecondary">
       <h1 className="text-center text-3xl md:text-5xl font-bold text-darkMain font-nunito my-5">Events</h1>

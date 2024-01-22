@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../logos/logo.png";
+import logo from "../images/logos/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -34,7 +34,7 @@ const Footer = () => {
           Follow Us
         </h4>
 
-        <div className="grid grid-cols-4 my-0 mx-auto max-w-[700px] text-[2.8em] text-darkMain ">
+        <div className="grid grid-cols-4 my-0 mx-auto max-w-[700px] text-[2.8em] text-[#0A4D34] ">
         <div className="hover:translate-y-[-10px] transition-all ease-in-out duration-150">
             <a href="http://facebook.com" className="" >
               <FontAwesomeIcon icon={faFacebook} />

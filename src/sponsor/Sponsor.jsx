@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import nfit from "../images/nfint-logo.5cc85aabb7c4fa57db1a.png";
 import msTeamLogo from "../images/Microsoft_Office_Teams_(2018–present).svg";
 import gamaLogo from "../images/Gamma_Logo.svg";
 import elmLogo from "../images/Gamma_Logo.svg";
-import logoIiiche from "../logos/logoiiche.svg";
+import logoIiiche from "../images/logos/logoiiche.svg";
 
 const Sponsers = () => {
+
   const [year, setYear] = useState(2023);
   const [isMore, setIsMore] = useState(false);
+  useEffect(() => {
+    window.scroll(0,0)
+    
+  }, []);
   return (
     <div className="w-full flex flex-col justify-center items-center  mt-24  bg-darkSecondary">
       <h1 className="text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-5">

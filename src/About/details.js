@@ -1,6 +1,6 @@
-import logo from "../logos/logo.svg";
-import iitkgplogo from "../logos/kgpLogo.svg";
-import logoiiche from "../logos/logoiiche.svg";
+import logo from "../images/logos/logo.svg";
+import iitkgplogo from "../images/logos/kgpLogo.svg";
+import logoiiche from "../images/logos/logoiiche.svg";
 export const Details=[
   {
     title:'Indian Institute of Technology Kharagpur',
