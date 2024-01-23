@@ -1,20 +1,20 @@
-import reverseBrainstorming from '../images/events/reverseBrainstorming.webp'
-import codeProblem from '../images/events/codeproblem.webp'
-import AIML from '../images/events/AIML.webp'
-import chemInnovation from '../images/events/chemInnovation.webp'
-import aspen from '../images/events/aspen.webp'
-import chemQuiz from '../images/events/chemQuiz.webp'
-import chemEngage from '../images/events/chemEngage.webp'
-import chemMeme from '../images/events/chemMeme.webp'
-import photography from '../images/events/photography.webp'
-import quiz from '../images/events/quiz.webp'
-import code from '../images/events/code.webp'
-import ML from '../images/events/ML.webp'
-import caseStudy from '../images/events/case.webp'
-import debate from '../images/events/debate.webp'
-import meme from '../images/events/meme.webp'
-import brainstorming from '../images/events/brainstorming.webp'
-import aspen1 from '../images/events/download.webp'
+const reverseBrainstorming =  `${process.env.PUBLIC_URL}/images/events/reverseBrainstorming.webp`
+const codeProblem =  `${process.env.PUBLIC_URL}/images/events/codeproblem.webp`
+const AIML=  `${process.env.PUBLIC_URL}/images/events/AIML.webp`
+const chemInnovation=  `${process.env.PUBLIC_URL}/images/events/chemInnovation.webp`
+const aspen =  `${process.env.PUBLIC_URL}/images/events/aspen.webp`
+const chemQuiz=  `${process.env.PUBLIC_URL}/images/events/chemQuiz.webp`
+const chemEngage=  `${process.env.PUBLIC_URL}/images/events/chemEngage.webp`
+const chemMeme=  `${process.env.PUBLIC_URL}/images/events/chemMeme.webp`
+const photography =  `${process.env.PUBLIC_URL}/images/events/photography.webp`
+const quiz=  `${process.env.PUBLIC_URL}/images/events/quiz.webp`
+const code=  `${process.env.PUBLIC_URL}/images/events/code.webp`
+const ML=  `${process.env.PUBLIC_URL}/images/events/ML.webp`
+const caseStudy =  `${process.env.PUBLIC_URL}/images/events/case.webp`
+const debate=  `${process.env.PUBLIC_URL}/images/events/debate.webp`
+const meme=  `${process.env.PUBLIC_URL}/images/events/meme.webp`
+const brainstorming =  `${process.env.PUBLIC_URL}/images/events/brainstorming.webp`
+const aspen1=  `${process.env.PUBLIC_URL}/images/events/download.webp`
 
 
 

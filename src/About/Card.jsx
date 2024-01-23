@@ -9,7 +9,7 @@ export default function Card(props) {
               />
           </div>
           <div className="p-3 md:p-4 text-center">
-            <h3 className="font-bold text-darkMain font-nunito sm:text-lg md:text-xl p-2">{props.title}</h3>
+            <h2 className="font-bold text-darkMain font-nunito sm:text-lg md:text-xl p-2">{props.title}</h2>
             <p className=' text-justify text-lightPrimary font-avenir'>
             {props.description}
             {/* <a className='text-sm text-slate-400' href="/"> Read More...</a> */}

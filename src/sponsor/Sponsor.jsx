@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import nfit from "../images/nfint-logo.5cc85aabb7c4fa57db1a.png";
-import msTeamLogo from "../images/Microsoft_Office_Teams_(2018–present).svg";
-import gamaLogo from "../images/Gamma_Logo.svg";
-import elmLogo from "../images/Gamma_Logo.svg";
-import logoIiiche from "../images/logos/logoiiche.svg";
 
 const Sponsers = () => {
+  const nfit = `${process.env.PUBLIC_URL}/images/nfint-logo.5cc85aabb7c4fa57db1a.png`;
+  const msTeamLogo = `${process.env.PUBLIC_URL}/images/Microsoft_Office_Teams_(2018–present).svg`;
+  const gamaLogo = `${process.env.PUBLIC_URL}/images/Gamma_Logo.svg`;
+  const elmLogo = `${process.env.PUBLIC_URL}/images/Gamma_Logo.svg`;
+  const logoIiiche = `${process.env.PUBLIC_URL}/images/logos/logoiiche.svg`;
 
   const [year, setYear] = useState(2023);
   const [isMore, setIsMore] = useState(false);

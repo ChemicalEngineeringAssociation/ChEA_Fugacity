@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react'
 import CardContact from './CardContact';
-import koushal from '../images/heads/koushal.webp'
-import suraj from '../images/heads/suraj.webp'
-import sikhar from '../images/heads/sikhar.webp'
-import ankush from '../images/heads/ankush.webp'
-import manish from '../images/heads/manish.webp'
-import shaukat from '../images/heads/shaukat.webp'
-import shreyash from '../images/heads/shreyash.webp'
-import rahul from '../images/heads/rahul.webp'
-import jeevan from '../images/heads/jeevan.webp'
-import prakhar from '../images/heads/prakhar.webp'
-import shivam from '../images/heads/shivam.webp'
-import megha from '../images/heads/megha.webp'
 const  ContactUs=()=> {
+  const koushal = `${process.env.PUBLIC_URL}/images/heads/koushal.webp`
+  const suraj = `${process.env.PUBLIC_URL}/images/heads/suraj.webp`
+  const sikhar = `${process.env.PUBLIC_URL}/images/heads/sikhar.webp`
+  const ankush = `${process.env.PUBLIC_URL}/images/heads/ankush.webp`
+  const manish = `${process.env.PUBLIC_URL}/images/heads/manish.webp`
+  const shaukat = `${process.env.PUBLIC_URL}/images/heads/shaukat.webp`
+  const shreyash = `${process.env.PUBLIC_URL}/images/heads/shreyash.webp`
+  const rahul = `${process.env.PUBLIC_URL}/images/heads/rahul.webp`
+  const jeevan = `${process.env.PUBLIC_URL}/images/heads/jeevan.webp`
+  const prakhar = `${process.env.PUBLIC_URL}/images/heads/prakhar.webp`
+  const shivam = `${process.env.PUBLIC_URL}/images/heads/shivam.webp`
+  const megha = `${process.env.PUBLIC_URL}/images/heads/megha.webp`
   useEffect(() => {
     window.scroll(0,0)
     
