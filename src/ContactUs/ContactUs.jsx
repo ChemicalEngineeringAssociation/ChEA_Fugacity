@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react'
 import CardContact from './CardContact';
 const  ContactUs=()=> {
-  const koushal = `${process.env.PUBLIC_URL}/images/heads/koushal.webp`
-  const suraj = `${process.env.PUBLIC_URL}/images/heads/suraj.webp`
-  const sikhar = `${process.env.PUBLIC_URL}/images/heads/sikhar.webp`
-  const ankush = `${process.env.PUBLIC_URL}/images/heads/ankush.webp`
-  const manish = `${process.env.PUBLIC_URL}/images/heads/manish.webp`
-  const shaukat = `${process.env.PUBLIC_URL}/images/heads/shaukat.webp`
-  const shreyash = `${process.env.PUBLIC_URL}/images/heads/shreyash.webp`
-  const rahul = `${process.env.PUBLIC_URL}/images/heads/rahul.webp`
-  const jeevan = `${process.env.PUBLIC_URL}/images/heads/jeevan.webp`
-  const prakhar = `${process.env.PUBLIC_URL}/images/heads/prakhar.webp`
-  const shivam = `${process.env.PUBLIC_URL}/images/heads/shivam.webp`
-  const megha = `${process.env.PUBLIC_URL}/images/heads/megha.webp`
+  const koushal = `/images/heads/koushal.webp`
+  const suraj = `/images/heads/suraj.webp`
+  const sikhar = `/images/heads/sikhar.webp`
+  const ankush = `/images/heads/ankush.webp`
+  const manish = `/images/heads/manish.webp`
+  const shaukat = `/images/heads/shaukat.webp`
+  const shreyash = `/images/heads/shreyash.webp`
+  const rahul = `/images/heads/rahul.webp`
+  const jeevan = `/images/heads/jeevan.webp`
+  const prakhar = `/images/heads/prakhar.webp`
+  const shivam = `/images/heads/shivam.webp`
+  const megha = `/images/heads/megha.webp`
   useEffect(() => {
     window.scroll(0,0)
     

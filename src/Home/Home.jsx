@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import './Home.css'
 import About from '../About/About'
 const Home = () => {
-  const Fugacity = `${process.env.PUBLIC_URL}/images/logos/Fugacity.webp`;
+  const Fugacity = `/images/logos/Fugacity.webp`;
   useEffect(() => {
     window.scroll(0,0)
     

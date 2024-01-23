@@ -1,6 +1,6 @@
-const logo =   `${process.env.PUBLIC_URL}/images/logos/logo.svg`;
-const  iitkgplogo= `${process.env.PUBLIC_URL}/images/logos/kgpLogo.svg`;
-const logoiiche=`${process.env.PUBLIC_URL}/images/logos/logoiiche.svg`
+const logo =   `/images/logos/logo.svg`;
+const  iitkgplogo= `/images/logos/kgpLogo.svg`;
+const logoiiche=`/images/logos/logoiiche.svg`
 export const Details=[
   {
     title:'Indian Institute of Technology Kharagpur',

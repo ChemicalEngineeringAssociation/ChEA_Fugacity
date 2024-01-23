@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-  const logo=  `${process.env.PUBLIC_URL}/images/logos/logo.svg`;
+  const logo=  `/images/logos/logo.svg`;
   return (
     <div
       className=" text-white bg-lightPrimary grid grid-cols-1 md:grid-cols-3  items-center justify-evenly p-2 md:p-4 "

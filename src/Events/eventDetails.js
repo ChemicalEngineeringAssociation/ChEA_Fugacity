@@ -1,20 +1,20 @@
-const reverseBrainstorming =  `${process.env.PUBLIC_URL}/images/events/reverseBrainstorming.webp`
-const codeProblem =  `${process.env.PUBLIC_URL}/images/events/codeproblem.webp`
-const AIML=  `${process.env.PUBLIC_URL}/images/events/AIML.webp`
-const chemInnovation=  `${process.env.PUBLIC_URL}/images/events/chemInnovation.webp`
-const aspen =  `${process.env.PUBLIC_URL}/images/events/aspen.webp`
-const chemQuiz=  `${process.env.PUBLIC_URL}/images/events/chemQuiz.webp`
-const chemEngage=  `${process.env.PUBLIC_URL}/images/events/chemEngage.webp`
-const chemMeme=  `${process.env.PUBLIC_URL}/images/events/chemMeme.webp`
-const photography =  `${process.env.PUBLIC_URL}/images/events/photography.webp`
-const quiz=  `${process.env.PUBLIC_URL}/images/events/quiz.webp`
-const code=  `${process.env.PUBLIC_URL}/images/events/code.webp`
-const ML=  `${process.env.PUBLIC_URL}/images/events/ML.webp`
-const caseStudy =  `${process.env.PUBLIC_URL}/images/events/case.webp`
-const debate=  `${process.env.PUBLIC_URL}/images/events/debate.webp`
-const meme=  `${process.env.PUBLIC_URL}/images/events/meme.webp`
-const brainstorming =  `${process.env.PUBLIC_URL}/images/events/brainstorming.webp`
-const aspen1=  `${process.env.PUBLIC_URL}/images/events/download.webp`
+const reverseBrainstorming =  `/images/events/reverseBrainstorming.webp`
+const codeProblem =  `/images/events/codeproblem.webp`
+const AIML=  `/images/events/AIML.webp`
+const chemInnovation=  `/images/events/chemInnovation.webp`
+const aspen =  `/images/events/aspen.webp`
+const chemQuiz=  `/images/events/chemQuiz.webp`
+const chemEngage=  `/images/events/chemEngage.webp`
+const chemMeme=  `/images/events/chemMeme.webp`
+const photography =  `/images/events/photography.webp`
+const quiz=  `/images/events/quiz.webp`
+const code=  `/images/events/code.webp`
+const ML=  `/images/events/ML.webp`
+const caseStudy =  `/images/events/case.webp`
+const debate=  `/images/events/debate.webp`
+const meme=  `/images/events/meme.webp`
+const brainstorming =  `/images/events/brainstorming.webp`
+const aspen1=  `/images/events/download.webp`
 
 
 
