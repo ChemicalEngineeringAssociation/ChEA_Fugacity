@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { NavItem } from "./navElement";
-import logo from "../images/logos/logo.svg";
-import hamburger from '../images/hamburger.svg'
-import crossMark from '../images/xmark.svg'
 
 const Navbar = () => {
+  const logo = `/images/logos/logo.svg`
+  const hamburger = `/images/hamburger.svg`
+  const crossMark = `/images/xmark.svg`
   const pathname = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 

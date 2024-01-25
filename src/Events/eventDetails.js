@@ -1,20 +1,20 @@
-import reverseBrainstorming from '../images/events/reverseBrainstorming.webp'
-import codeProblem from '../images/events/codeproblem.webp'
-import AIML from '../images/events/AIML.webp'
-import chemInnovation from '../images/events/chemInnovation.webp'
-import aspen from '../images/events/aspen.webp'
-import chemQuiz from '../images/events/chemQuiz.webp'
-import chemEngage from '../images/events/chemEngage.webp'
-import chemMeme from '../images/events/chemMeme.webp'
-import photography from '../images/events/photography.webp'
-import quiz from '../images/events/quiz.webp'
-import code from '../images/events/code.webp'
-import ML from '../images/events/ML.webp'
-import caseStudy from '../images/events/case.webp'
-import debate from '../images/events/debate.webp'
-import meme from '../images/events/meme.webp'
-import brainstorming from '../images/events/brainstorming.webp'
-import aspen1 from '../images/events/download.webp'
+const reverseBrainstorming =  `/images/events/reverseBrainstorming.webp`
+const codeProblem =  `/images/events/codeproblem.webp`
+const AIML=  `/images/events/AIML.webp`
+const chemInnovation=  `/images/events/chemInnovation.webp`
+const aspen =  `/images/events/aspen.webp`
+const chemQuiz=  `/images/events/chemQuiz.webp`
+const chemEngage=  `/images/events/chemEngage.webp`
+const chemMeme=  `/images/events/chemMeme.webp`
+const photography =  `/images/events/photography.webp`
+const quiz=  `/images/events/quiz.webp`
+const code=  `/images/events/code.webp`
+const ML=  `/images/events/ML.webp`
+const caseStudy =  `/images/events/case.webp`
+const debate=  `/images/events/debate.webp`
+const meme=  `/images/events/meme.webp`
+const brainstorming =  `/images/events/brainstorming.webp`
+const aspen1=  `/images/events/download.webp`
 
 
 

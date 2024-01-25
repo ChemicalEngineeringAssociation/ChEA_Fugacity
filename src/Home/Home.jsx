@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import Fugacity from "../images/logos/Fugacity.webp";
-import About from "../About/About";
 import './Home.css'
+import About from '../About/About'
 const Home = () => {
+  const Fugacity = `/images/logos/Fugacity.webp`;
   useEffect(() => {
     window.scroll(0,0)
     
@@ -35,6 +35,7 @@ const Home = () => {
                 </div>
         </div>
       </section>
+
       <About/>
       {/* <Merchandise/> */}
     </div>

@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react'
 import CardContact from './CardContact';
-import koushal from '../images/heads/koushal.webp'
-import suraj from '../images/heads/suraj.webp'
-import sikhar from '../images/heads/sikhar.webp'
-import ankush from '../images/heads/ankush.webp'
-import manish from '../images/heads/manish.webp'
-import shaukat from '../images/heads/shaukat.webp'
-import shreyash from '../images/heads/shreyash.webp'
-import rahul from '../images/heads/rahul.webp'
-import jeevan from '../images/heads/jeevan.webp'
-import prakhar from '../images/heads/prakhar.webp'
-import shivam from '../images/heads/shivam.webp'
-import megha from '../images/heads/megha.webp'
 const  ContactUs=()=> {
+  const koushal = `/images/heads/koushal.webp`
+  const suraj = `/images/heads/suraj.webp`
+  const sikhar = `/images/heads/sikhar.webp`
+  const ankush = `/images/heads/ankush.webp`
+  const manish = `/images/heads/manish.webp`
+  const shaukat = `/images/heads/shaukat.webp`
+  const shreyash = `/images/heads/shreyash.webp`
+  const rahul = `/images/heads/rahul.webp`
+  const jeevan = `/images/heads/jeevan.webp`
+  const prakhar = `/images/heads/prakhar.webp`
+  const shivam = `/images/heads/shivam.webp`
+  const megha = `/images/heads/megha.webp`
   useEffect(() => {
     window.scroll(0,0)
     
