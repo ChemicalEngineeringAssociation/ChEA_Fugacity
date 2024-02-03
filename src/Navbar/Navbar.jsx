@@ -23,10 +23,10 @@ const Navbar = () => {
               alt="logo"
               width="70"
             />
-            <h1 className="md:ml-3 lg:text-2xl ">
+            {/* <h1 className="md:ml-3 lg:text-2xl ">
 
              Chemical Engineering Association
-            </h1>
+            </h1> */}
           </Link>
           {/* Mobile menu */}
           
@@ -34,7 +34,7 @@ const Navbar = () => {
               <img src={hamburger} alt="hamburger" width={40} />
             </div>
 
-          <ul className="hidden font-nunito text-darkSecondary lg:flex flex-col md:flex-row flex-1 justify-evenly items-center ">
+          <ul className="hidden font-nunito text-darkSecondary lg:flex flex-col md:flex-row flex-1  justify-evenly items- 10 max-w-[1000px] ">
             {
               NavItem.map((item) => (
                 <li key={item.title} className={`${pathname.pathname === item.href ? 'font-bold text-2xl' : 'font-semibold text-xl'} hover:text-2xl transition-all duration-300 ease-in-out`}>

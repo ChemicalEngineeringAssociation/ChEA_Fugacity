@@ -8,17 +8,27 @@ const  ContactUs=()=> {
   const manish = `/images/heads/manish.webp`
   const shaukat = `/images/heads/shaukat.webp`
   const shreyash = `/images/heads/shreyash.webp`
-  const rahul = `/images/heads/rahul.webp`
+  const rahul = `/images/heads/Rahul.jpg`
   const jeevan = `/images/heads/jeevan.webp`
   const prakhar = `/images/heads/prakhar.webp`
   const shivam = `/images/heads/shivam.webp`
   const megha = `/images/heads/megha.webp`
+  const rupesh = `/images/heads/Rupesh.jpeg`
+  const debmitra = `/images/heads/Debmitra.jpg`
+  const hod =`/images/heads/HOD.jpg`
+  const facad = `/images/heads/Facad.jpg`
   useEffect(() => {
     window.scroll(0,0)
     
   }, []);
   return (
     <div className=' mt-24 w-full bg-darkSecondary pb-5 '>
+        <h1 className='text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-3 p-4'>Acknowledgement</h1>
+         <div id='prof' className='flex flex-col gap-2 lg:flex-row justify-around items-center mt-10 max-w-[1000px] mx-auto'>
+             <CardContact name="Prof. B.C. Meikap" position="HOD Chemical Engineering Department" email="bcmeikap@che.iitkgp.ac.in" phone="3222-282249" url={hod} />
+             
+             <CardContact name="Prof. Koustuv Ray" position="ChEA in Charge" email="koustuv@che.iitkgp.ac.in" phone="3222-284582" url={facad} />
+         </div>
       <h1 className='text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-3 p-4'>Our Team</h1>
     
       <div className='flex justify-center items-center'>
@@ -28,6 +38,7 @@ const  ContactUs=()=> {
       <div className='flex flex-col gap-2 lg:flex-row justify-around items-center mt-10 max-w-[1500px] mx-auto'>
         <CardContact name="Suraj Padmanabh Shet" position="PG Representative" email="surajshet5555@gmail.com" phone="8660292319" url={suraj} />
         <CardContact name="Ankush Kumar" position="Fugacity Co-ordinator" email="ankumar505@gmail.com" phone="8651812624" url={ankush} />
+        <CardContact name="Rupesh Narayan" position="UG Representative" email="rupeshnarayan06@gmail.com" phone="9971968380" url={rupesh} />
       </div>
       <h1 className='text-center font-nunito text-darkMain  text-2xl font-bold my-3 p-4 underline'>Team Heads</h1>
       
@@ -45,6 +56,7 @@ const  ContactUs=()=> {
         <CardContact name="Prakhar Jain" position="Sponsorship Team Head" email="Prakhar.jain3333@gmail.com" phone="7727082097" url={prakhar} />
         <CardContact name="Megha Singh" position="Sponsorship Team Head" email="meghasingh1004@gmail.com" phone="8271226399" url={megha} />
         <CardContact name="Shivam Kumar Sharma" position="Sponsorship Team Head" email="iamshivamkumarsharma@gmail.com" phone="9939893600" url={shivam} />
+        <CardContact name="Debmitra Mukherjee" position="Sponsorship Team Head" email="debmitra999@gmail.com" phone="7003727109" url={debmitra} />
       </div>
 
     </div>
