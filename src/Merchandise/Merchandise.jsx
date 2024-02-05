@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import './Merchandise.css'
 import MerchCard from "./MerchCard";
 
@@ -7,7 +7,7 @@ const Merchandise = () => {
   const merch_front = `/images/varsity_(1).png`
   const merch_back = `/images/varsity_(2).png`
   const bg = `/images/bg.gif`
-  const [isMore, setIsMore] = useState(false);
+  // const [isMore, setIsMore] = useState(false);
   useEffect(() => {
     window.scroll(0,0)
   }, []);
@@ -26,14 +26,14 @@ const Merchandise = () => {
           </div>
           <div className='flex justify-center items-center'>
           <button className="mt-10 px-100 py-500 text-center">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDGIfinEMyfPeJ-tGQl5UXJHXFaYVh6vBzE82tDfrFMqGybA/viewform" className=" from-[#8F379E] to-[#B92E61] hover-gradient rounded-lg px-5 py-2" style={{
+              <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfDGIfinEMyfPeJ-tGQl5UXJHXFaYVh6vBzE82tDfrFMqGybA/viewform" className=" from-[#8F379E] to-[#B92E61] hover-gradient rounded-lg px-5 py-2" style={{
                 backgroundColor: 'transparent',
                 color: 'white',
                 border: '1px solid white',
                 margin: '20px',
                 padding: '15px 25px',
                 transition: 'background-color 0.3s ease',
-              }}>
+              }} rel="noreferrer">
               Buy Now
               </a>
             </button>
