@@ -4,7 +4,7 @@ import { NavItem } from "./navElement";
 
 const Navbar = () => {
   const logo = `/images/logos/logo.svg`
-  const hamburger = `/images/hamburger.svg`
+  const hamburger = `/images/download.svg`
   const crossMark = `/images/xmark.svg`
   const pathname = useLocation();
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +13,12 @@ const Navbar = () => {
     <>
       <div className="flex justify-center items-center">
         <nav className="flex h-24 z-10
-         justify-between items-center bg-lightPrimary
+         justify-between items-center bg-black bg-opacity-100
          fixed top-0  w-full
          ">
           <Link to="/" className="text-center font-bold p-2 md:ml-6 md:mr-10 flex items-center text-[#0A4D34] font-nunito text-xl">
             <img
-              className="inline rounded-full "
+              className="inline rounded-full shadow-white"
               src={logo}
               alt="logo"
               width="70"
@@ -34,10 +34,10 @@ const Navbar = () => {
               <img src={hamburger} alt="hamburger" width={40} />
             </div>
 
-          <ul className="hidden font-nunito text-darkSecondary lg:flex flex-col md:flex-row flex-1  justify-evenly items- 10 max-w-[1000px] ">
+          <ul className="hidden font-nunito text-darkSecondary lg:flex flex-col md:flex-row flex-1 justify-evenly items-10 max-w-[1000px]">
             {
               NavItem.map((item) => (
-                <li key={item.title} className={`${pathname.pathname === item.href ? 'font-bold text-2xl' : 'font-semibold text-xl'} hover:text-2xl transition-all duration-300 ease-in-out`}>
+                <li key={item.title} className={`${pathname.pathname === item.href ? 'font-bold text-2xl' : 'font-semibold text-xl'} hover:text-2xl transition-all duration-300 ease-in-out text-white`}>
                   <Link to={item.href} className="">
                     {item.title}
                   </Link>
