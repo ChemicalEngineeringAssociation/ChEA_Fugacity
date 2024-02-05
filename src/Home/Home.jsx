@@ -25,14 +25,14 @@ const Home = () => {
             </button>
           </div> 
 
-          <div className=" flex justify-center items-center  sm:w-full md:w-1/2 h-full col-lg-6  order-1 order-lg-2 header-img text-center">
+          {/* <div className=" flex justify-center items-center  sm:w-full md:w-1/2 h-full col-lg-6  order-1 order-lg-2 header-img text-center">
                   <img
                     src={Fugacity}
                     className=""
                     alt="logo"
                     width={400}
                   />
-                </div>
+                </div> */}
         </div>
       </section>
 

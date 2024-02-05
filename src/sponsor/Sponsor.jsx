@@ -50,11 +50,11 @@ const Sponsers = () => {
               src={msTeamLogo}
               alt="sponsName"
             />
-            <img
+            {/* <img
               className="bg-white w-[15em] h-[13em] p-5 rounded-md  mx-2 mb-3"
               src={elmLogo}
               alt="sponsName"
-            />
+            /> */}
           </div>
         )}
         {year === 2023 && (
