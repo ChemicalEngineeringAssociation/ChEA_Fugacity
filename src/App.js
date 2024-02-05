@@ -16,6 +16,7 @@ import Loading from "./Loading";
 const ContactUs = lazy(() => import("./ContactUs/ContactUs"));
 const Events = lazy(() => import("./Events/Events"));
 const Sponsor = lazy(() => import("./sponsor/Sponsor"));
+const Merchandise = lazy(() => import("./Merchandise/Merchandise.jsx"));
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
         <Route path="/contact" element={<Suspense fallback={<Loading />}>
               <ContactUs />
             </Suspense>}></Route>
+        <Route path="/merchandise" element={<Suspense fallback={<Loading />}>
+              <Merchandise />
+        </Suspense>}></Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />

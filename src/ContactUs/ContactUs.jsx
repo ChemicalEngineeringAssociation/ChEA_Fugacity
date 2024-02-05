@@ -27,7 +27,7 @@ const  ContactUs=()=> {
          <div id='prof' className='flex flex-col gap-2 lg:flex-row justify-around items-center mt-10 max-w-[1000px] mx-auto'>
              <CardContact name="Prof. B.C. Meikap" position="HOD Chemical Engineering Department" email="bcmeikap@che.iitkgp.ac.in" phone="3222-282249" url={hod} />
              
-             <CardContact name="Prof. Koustuv Ray" position="ChEA in Charge" email="koustuv@che.iitkgp.ac.in" phone="3222-284582" url={facad} />
+             <CardContact name="Prof. Koustuv Ray" position="ChEA Incharge" email="koustuv@che.iitkgp.ac.in" phone="3222-284582" url={facad} />
          </div>
       <h1 className='text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-3 p-4'>Our Team</h1>
     
