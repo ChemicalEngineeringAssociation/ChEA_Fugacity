@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { NavItem } from "./navElement";
+import './Navbar.css'; // Import your CSS file
 
 const Navbar = () => {
   const logo = `/images/logos/logo.svg`
@@ -30,9 +31,9 @@ const Navbar = () => {
           </Link>
           {/* Mobile menu */}
           
-            <div onClick={() => setIsOpen(true)} className={`${isOpen ?'hidden':'block'} transition-all duration-300 ease-in-out lg:hidden mr-4`}>
-              <img src={hamburger} alt="hamburger" width={40} />
-            </div>
+          <div onClick={() => setIsOpen(true)} className={`${isOpen ? 'hidden' : 'block'} transition-all duration-300 ease-in-out lg:hidden mr-4`}>
+            <img src={hamburger} alt="hamburger" width={40} />
+          </div>
 
           <ul className="hidden font-nunito text-darkSecondary lg:flex flex-col md:flex-row flex-1 justify-evenly items-10 max-w-[1000px]">
             {
@@ -47,13 +48,13 @@ const Navbar = () => {
           </ul>
         </nav>
        
-          <div onClick={() => setIsOpen(false)} className={`${isOpen ? 'block':'hidden'} overflow-hidden transition-display duration-1000 ease-in-out flex flex-col lg:hidden z-20 w-full shadow-md min-h-screen fixed  top-0 bg-lightPrimary/40 right-0`}>
-          <div className="bg-lightPrimary fixed top-0 right-0 w-2/3 h-full">
+        <div className={`${isOpen ? 'translate-x-0' : 'translate-x-full'} transform fixed top-0 right-0 w-2/3 h-full bg-lightPrimary/40 transition-all duration-500 ease-in-out z-20`}>
+          <div className="bg-lightPrimary h-full">
 
-            <div onClick={() => setIsOpen(false)} className=" lg:hidden m-2">
+            <div onClick={() => setIsOpen(false)} className="lg:hidden m-2">
               <img src={crossMark} alt="hamburger" width={30} />
             </div>
-            <ul className=" font-nunito  text-darkSecondary flex flex-col gap-2   items-center ">
+            <ul className=" font-nunito  text-darkSecondary flex flex-col gap-2 items-center">
               {
                 NavItem.map((item) => (
                   <li key={item.title} className={`${pathname.hash === item.href ? 'text-2xl bold' : 'font-semibold text-xl'}  transition-all ease-in-out duration-300 hover:text-2xl `}>
@@ -65,7 +66,7 @@ const Navbar = () => {
               }
             </ul>
           </div>
-          </div>
+        </div>
       </div>
     </>
   );

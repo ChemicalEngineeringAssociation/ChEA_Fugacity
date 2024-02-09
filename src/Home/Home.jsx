@@ -31,15 +31,8 @@ const Home = () => {
             
             </h2>
         
-            <button className="mt-10 px-100 py-500 text-center">
-              <a href="/" className=" from-[#8F379E] to-[#B92E61] hover-gradient rounded-lg px-5 py-2" style={{
-                backgroundColor: 'transparent',
-                color: 'white',
-                border: '1px solid white',
-                margin: '10px',
-                padding: '15px 25px',
-                transition: 'background-color 0.3s ease',
-              }}>
+            <button className="mt-12 text-center">
+              <a href="/" className="border-1 font-semibold text-lg border-black bg-gradient-to-b from-[#8F379E] to-[#B92E61] hover-gradient rounded-lg px-5 py-2">
                 Register Here
               </a>
             </button>
