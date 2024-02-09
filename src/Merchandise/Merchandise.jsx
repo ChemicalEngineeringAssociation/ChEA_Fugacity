@@ -17,7 +17,7 @@ const Merchandise = () => {
         <h1 className='text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-3 p-4'>Merchandise</h1>
         <div className="flex justify-center items-center">
         <p className="text-white p-6 text-center">
-        Hola Chemical Engineers! The wait is finally over, ChEA IIT Kharagpur proudly unveils the merchandise for 2023! 
+        Hola Chemical Engineers! The wait is finally over, ChEA IIT Kharagpur proudly unveils the merchandise for 2024! 
         </p>
         </div>
          <div id='varsity' className='flex flex-col gap-2 lg:flex-row justify-around items-center mt-10 max-w-[1000px] mx-auto'>

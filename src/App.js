@@ -12,11 +12,13 @@ import Home from "./Home/Home";
 import Footer from "./Footer/Footer";
 import { Suspense, lazy } from "react";
 import Loading from "./Loading";
+import About from "./About/About.jsx";
 
 const ContactUs = lazy(() => import("./ContactUs/ContactUs"));
 const Events = lazy(() => import("./Events/Events"));
 const Sponsor = lazy(() => import("./sponsor/Sponsor"));
 const Merchandise = lazy(() => import("./Merchandise/Merchandise.jsx"));
+const Register = lazy(() => import("./Register/Register.jsx"));
 
 function App() {
   return (
@@ -40,6 +42,12 @@ function App() {
             </Suspense>}></Route>
         <Route path="/merchandise" element={<Suspense fallback={<Loading />}>
               <Merchandise />
+        </Suspense>}></Route>
+        <Route path="/Register" element={<Suspense fallback={<Loading />}>
+              <Register />
+        </Suspense>}></Route>
+        <Route path="/About" element={<Suspense fallback={<Loading />}>
+              <About />
         </Suspense>}></Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
