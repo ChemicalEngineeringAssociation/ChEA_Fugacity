@@ -47,7 +47,7 @@ function Form() {
 
   return (
     <div className="container">
-      {Object.keys(formErrors).length === 0 && isSubmit ? (
+      {/* {Object.keys(formErrors).length === 0 && isSubmit ? (
         <div className="ui message success">Signed in successfully</div>
       ) : (
         <pre>{JSON.stringify(formValues, undefined, 2)}</pre>
@@ -92,7 +92,7 @@ function Form() {
           <p>{formErrors.password}</p>
           <button className="fluid ui button blue">Submit</button>
         </div>
-      </form>
+      </form> */}
     </div>
   );
 }

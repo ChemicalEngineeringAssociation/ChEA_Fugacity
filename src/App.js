@@ -17,8 +17,8 @@ import About from "./About/About.jsx";
 const ContactUs = lazy(() => import("./ContactUs/ContactUs"));
 const Events = lazy(() => import("./Events/Events"));
 const Sponsor = lazy(() => import("./sponsor/Sponsor"));
-const Merchandise = lazy(() => import("./Merchandise/Merchandise.jsx"));
-const Register = lazy(() => import("./Register/Register.jsx"));
+const Merchandise = lazy(() => import("./Merchandise/Merchandise"));
+const Register = lazy(() => import("./Register/Register"));
 
 function App() {
   return (

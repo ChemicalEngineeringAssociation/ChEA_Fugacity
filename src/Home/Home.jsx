@@ -24,7 +24,7 @@ const Home = () => {
             </section>
             <h2 className="text-2xl font-bold mt-5 text-[#B3B3B3] font-avenir"> 
               <TypingEffect
-                text={['Coming Soon', 'Stay Tuned', 'Register Now', 'For More Info']}
+                text={['30-31st March','Register Now!']}
                 speed={100}
                 eraseDelay={1000}
               />
