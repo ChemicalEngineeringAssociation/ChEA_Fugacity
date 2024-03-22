@@ -47,7 +47,7 @@ const ContactUs = () => {
         />
         <CardContact
           name="Prof. Swambabu Varanasi"
-          position="Proffesor Incharge"
+          position="Professor Incharge"
           email="swambabu@che.iitkgp.ac.in"
           phone="3222-284582"
           url={proffIncharge}
