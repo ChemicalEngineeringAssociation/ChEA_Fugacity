@@ -1,37 +1,46 @@
 import React, { useEffect } from "react";
 
 import TypingEffect from "react-typing-effect";
-import './Home.css';
-import About from '../About/About';
+import "./Home.css";
+import About from "../About/About";
 
 const Home = () => {
   const Fugacity = `/images/logos/Fugacity.webp`;
   const backgroundImage = `/images/bg3.gif`;
   useEffect(() => {
-    window.scroll(0,0);
+    window.scroll(0, 0);
   }, []);
 
   return (
     <div id="home" className="app-container">
-      <section className="mt-16 h-[91vh]  flex justify-center items-center bg-darkSecondary"
-      style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`, backgroundSize: 'cover' }}
+      <section
+        className="mt-16 h-[91vh]  flex justify-center items-center bg-black"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
+          backgroundSize: "cover",
+        }}
       >
         <div className="flex w-full h-[90%] flex-col md:flex-row justify-around">
           <div className="flex justify-center items-center flex-col  h-full sm:w-full md:w-1/2 p-3  text-center">
-            <section className=" relative w-full h-1/4 flex justify-center items-center  text-center">  
-              <h2 style={{ WebkitTextStroke: "4px #f7f7f7" }} className="text-white text-transparent text-[4.5em] md:text-[8em] absolute ">Fugacity </h2>
-              <h2  className="animatEffect text-blue-500 text-[4.5em] md:text-[8em] absolute  ">Fugacity </h2>
+            <section className=" relative w-full h-1/4 flex justify-center items-center  text-center">
+              <h2
+                style={{ WebkitTextStroke: "4px #f7f7f7" }}
+                className="text-white text-transparent text-[4.5em] md:text-[8em] absolute "
+              >
+                Fugacity{" "}
+              </h2>
+              <h2 className="animatEffect text-blue-500 text-[4.5em] md:text-[8em] absolute  ">
+                Fugacity{" "}
+              </h2>
             </section>
-            <h2 className="text-2xl font-bold mt-5 text-[#B3B3B3] font-avenir"> 
+            <h2 className="text-2xl font-bold mt-5 text-[#B3B3B3] font-avenir">
               <TypingEffect
-                text={['30th Mar 2024-31st Mar 2024','Register Now!']}
+                text={["30th Mar 2024-31st Mar 2024", "Register Now!"]}
                 speed={100}
                 eraseDelay={1000}
               />
             </h2>
-        
-            
-          </div> 
+          </div>
 
           {/* <div className=" flex justify-center items-center  sm:w-full md:w-1/2 h-full col-lg-6  order-1 order-lg-2 header-img text-center">
             <img
@@ -43,7 +52,7 @@ const Home = () => {
           </div> */}
         </div>
       </section>
-      <About/>
+      <About />
       {/* <Merchandise/> */}
     </div>
   );

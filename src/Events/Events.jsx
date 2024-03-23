@@ -4,27 +4,23 @@ import EventCard from "./EventCard";
 import EventShortCard from "./EventShortCard";
 const Events = () => {
   useEffect(() => {
-    window.scroll(0,0)
-    
+    window.scroll(0, 0);
   }, []);
   return (
-    <div className="mt-24  flex flex-col justify-center items-center bg-darkSecondary">
-      <h1 className="text-center text-3xl md:text-5xl font-bold text-darkMain font-nunito my-5">Events</h1>
+    <div className="pt-36 flex flex-col justify-center items-center bg-black">
+      <h1 className="text-center text-3xl md:text-5xl font-bold text-darkMain font-nunito my-5">
+        Events
+      </h1>
       <div className="grid justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-3 m-10">
-        {
-          eventDetails.map((event) => {
-            return(
-              <EventShortCard title={event.title} url={event.url2} />
-            )
-          })
-        }
+        {eventDetails.map((event) => {
+          return <EventShortCard title={event.title} url={event.url2} />;
+        })}
       </div>
       {/* <ShortEvent/> */}
       <ul className="flex w-full flex-col m-2 lg:m-10 ">
         {eventDetails.map((event) => {
           return (
             <li key={event.title}>
-
               <EventCard
                 title={event.title}
                 description1={event.description1}

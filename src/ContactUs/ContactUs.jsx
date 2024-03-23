@@ -22,7 +22,7 @@ const ContactUs = () => {
     window.scroll(0, 0);
   }, []);
   return (
-    <div className=" mt-24 w-full bg-darkSecondary pb-5 ">
+    <div className=" pt-36 w-full bg-black pb-5 ">
       <h1 className="text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-3 p-4">
         Acknowledgement
       </h1>

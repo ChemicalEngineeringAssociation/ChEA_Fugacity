@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 // import { useState } from "react";
 import "./Merchandise.css";
 import MerchCard from "./MerchCard";
+import { Link } from "react-router-dom";
 
 const Merchandise = () => {
   const merch_front = `/images/varsity_(1).png`;
@@ -14,7 +15,7 @@ const Merchandise = () => {
 
   return (
     <div
-      className="mt-24 w-full bg-darkSecondary pb-5"
+      className="pt-36 w-full bg-darkSecondary pb-5"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bg})`,
         backgroundSize: "cover",
@@ -49,19 +50,10 @@ const Merchandise = () => {
         />
       </div>
       <div className="flex justify-center items-center">
-        <button className="mt-10 px-100 py-500 text-center">
+        <button className="px-5 rounded-lg bg-darkPrimary text-lightPrimary py-2  m-2 font-bold text-xl ">
           <a
             target="_blank"
             href="https://docs.google.com/forms/d/e/1FAIpQLSfDGIfinEMyfPeJ-tGQl5UXJHXFaYVh6vBzE82tDfrFMqGybA/viewform"
-            className=" from-[#8F379E] to-[#B92E61] hover-gradient rounded-lg px-5 py-2"
-            style={{
-              backgroundColor: "transparent",
-              color: "white",
-              border: "1px solid white",
-              margin: "20px",
-              padding: "15px 25px",
-              transition: "background-color 0.3s ease",
-            }}
             rel="noreferrer"
           >
             Buy Now
