@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex justify-center items-center">
         <nav
           className="flex h-[140px] z-10
-         justify-between items-center bg-black bg-opacity-100
+         justify-between items-center  
          fixed top-0  w-full
          "
         >
@@ -27,7 +27,7 @@ const Navbar = () => {
               className="inline rounded-full  shadow-white"
               src={logo}
               alt="logo"
-              width="180"
+              width="100"
             />
             {/* <h1 className="md:ml-3 lg:text-2xl ">
 
