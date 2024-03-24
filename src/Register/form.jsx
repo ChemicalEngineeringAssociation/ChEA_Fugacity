@@ -46,14 +46,15 @@ function Form() {
   };
 
   return (
-    <div className="container">
+    
+    <div className="flex flex-col items-start justify-center max-w-[500px] w-full m-auto">
       {Object.keys(formErrors).length === 0 && isSubmit ? (
         <div className="ui message success">Signed in successfully</div>
       ) : (
         <pre>{JSON.stringify(formValues, undefined, 2)}</pre>
       )}
 
-      <form onSubmit={handleSubmit}>
+      <form className="W-[70%] p-5 rounded-md bg-white" onSubmit={handleSubmit}>
         <h1>Registration Form</h1>
         <div className="ui divider"></div>
         <div className="ui form">

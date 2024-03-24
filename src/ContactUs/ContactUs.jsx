@@ -45,15 +45,15 @@ const  ContactUs=()=> {
       <div id='tech' className='flex flex-col gap-2 lg:flex-row justify-around items-center mt-5 max-w-[1500px] mx-auto'>
         <CardContact name="Shaukat Ali" position="Web Team Head" email="shau8122@gmail.com" phone="7654831436" url={shaukat} />
         <CardContact name="Manish vaghmashi" position="Core Team Head" email="manishvaghamashi1011@gmail.com" phone="9316614261" url={manish} />
-        <CardContact name="Shreyash Jay" position="Core Team Head" email="shreyashjay5@gmail.com" phone="9608407527" url={shreyash} />
+        {/* <CardContact name="Shreyash Jay" position="Core Team Head" email="shreyashjay5@gmail.com" phone="9608407527" url={shreyash} /> */}
+        <CardContact name="Shikhar Samrat" position="General Secretary" email="shikharsamrat22@gmail.com" phone="6205324328" url={sikhar} />
       </div>
       <div id='design' className='flex flex-col gap-2 lg:flex-row justify-around items-center mt-5 max-w-[1500px] mx-auto'>
-        <CardContact name="Shikhar Samrat" position="General Secretary" email="shikharsamrat22@gmail.com" phone="6205324328" url={sikhar} />
         <CardContact name="Rahul Rajwar" position="Design Team head" email="rahulbilturajwar@gmail.com" phone="8092573150" url={rahul} />
         <CardContact name="Thummalapelli Jeevan Kumar" position="Design Team Head" email="jeevankumar.t1709@gmail.com" phone="9121931784" url={jeevan} />
+        <CardContact name="Prakhar Jain" position="Sponsorship Team Head" email="Prakhar.jain3333@gmail.com" phone="7727082097" url={prakhar} />
       </div>
       <div className='flex flex-col lg:flex-row gap-2 justify-around items-center mt-5 max-w-[1500px] mx-auto'>
-        <CardContact name="Prakhar Jain" position="Sponsorship Team Head" email="Prakhar.jain3333@gmail.com" phone="7727082097" url={prakhar} />
         <CardContact name="Megha Singh" position="Sponsorship Team Head" email="meghasingh1004@gmail.com" phone="8271226399" url={megha} />
         <CardContact name="Shivam Kumar Sharma" position="Sponsorship Team Head" email="iamshivamkumarsharma@gmail.com" phone="9939893600" url={shivam} />
         <CardContact name="Debmitra Mukherjee" position="Sponsorship Team Head" email="debmitra999@gmail.com" phone="7003727109" url={debmitra} />
