@@ -6,7 +6,7 @@ import About from "../About/About";
 
 const Home = () => {
   const Fugacity = `/images/logos/Fugacity.webp`;
-  const backgroundImage = `/images/bg3.gif`;
+  const backgroundImage = `/images/Back.png`;
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div id="home" className="app-container">
       <section
-        className="mt-16 h-[91vh]  flex justify-center items-center bg-black"
+        className=" h-[100vh]  flex justify-center items-center"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
           backgroundSize: "cover",
