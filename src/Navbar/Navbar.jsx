@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { NavItem } from "./navElement";
+import "./Navbar.css"; // Import your CSS file
 
 const Navbar = () => {
   const logo = `/images/logos/logo.svg`;
@@ -12,36 +13,16 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-center items-center">
-        <nav
-          className="flex h-[100px] md:h-[140px] z-10
-         justify-between items-center bg-black bg-opacity-100
-         fixed top-0  w-full
-         "
-        >
+        <nav className="Navbar flex h-[140px] z-10 justify-between items-center fixed top-0 w-full py-4 px-4">
           <Link
             to="/"
-            className="text-center hidden md:flex font-bold  md:ml-6 md:mr-10 mx-2 items-center text-[#0A4D34] font-nunito text-xl"
+            className="text-center  font-bold  md:ml-6 md:mr-10 mx-2 flex items-center text-[#0A4D34] font-nunito text-xl"
           >
             <img
               className="inline rounded-full  shadow-white"
               src={logo}
               alt="logo"
-              width="180"
-            />
-            {/* <h1 className="md:ml-3 lg:text-2xl ">
-
-             Chemical Engineering Association
-            </h1> */}
-          </Link>
-          <Link
-            to="/"
-            className="text-center flex md:hidden  font-bold  md:ml-6 md:mr-10 mx-2  items-center text-[#0A4D34] font-nunito text-xl"
-          >
-            <img
-              className="inline rounded-full  shadow-white"
-              src={logo}
-              alt="logo"
-              width="120"
+              width="100"
             />
             {/* <h1 className="md:ml-3 lg:text-2xl ">
 
