@@ -17,10 +17,12 @@
 
 .scrollbar-width-none {
   scrollbar-width: none;
-} 
+}
 
-*, ::after, ::before {
-	scroll-behavior: smooth;
+*,
+::after,
+::before {
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
@@ -33,18 +35,21 @@
   transform-style: preserve-3d;
   perspective: 1000px;
 }
+
 .cardParent .card {
   transform: translateY(0deg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
-  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
-  transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
-.frontFace{
+
+.frontFace {
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
-.cardParent:hover > .frontFace{
+
+.cardParent:hover>.frontFace {
   transform: rotateY(-180deg);
 }
 
@@ -55,25 +60,29 @@
   flex-direction: column;
   transform: rotateY(180deg);
 }
-.cardParent:hover > .backFace{
+
+.cardParent:hover>.backFace {
   transform: rotateY(0deg);
 }
-.eventCard{
+
+.eventCard {
   display: flex;
   padding: 0 35px;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.eventCard .wrapper{
+
+.eventCard .wrapper {
   max-width: 1100px;
   width: 100%;
   position: relative;
   /* background:white; */
 }
-.eventCard .carousel{
+
+.eventCard .carousel {
   display: grid;
-  grid-auto-flow:column;
+  grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 12px);
   gap: 16px;
   overflow-x: auto;
@@ -81,6 +90,7 @@
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+
 .eventCard .carousel::-webkit-scrollbar {
   display: none;
 }
@@ -104,7 +114,7 @@
 .wrapper .rightArrow{
   right: -22px;
 } */
- .eventShortCard{
+.eventShortCard {
   height: 250px;
   scroll-snap-align: start;
   list-style: none;
@@ -116,14 +126,16 @@
   justify-content: space-around;
   flex-direction: column;
 }
-@media screen and (max-width: 900px){
-  .wrapper .carousel{
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
     grid-auto-columns: calc((100% / 3) - 9px);
   }
-  
+
 }
-@media screen and (max-width: 600px){
-  .wrapper .carousel{
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
     grid-auto-columns: 100%;
   }
 }

@@ -34,3 +34,11 @@
     width: 100%;
     height: 1
   }  
+  .Navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity value (0.5 for 50% opacity) */
+  }
+  
+  .Navbar a {
+    color: white; /* Set the text color */
+  }
+  

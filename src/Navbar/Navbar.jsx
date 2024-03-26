@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { NavItem } from "./navElement";
-import './Navbar.css'; // Import your CSS file
+import "./Navbar.css"; // Import your CSS file
 
 const Navbar = () => {
   const logo = `/images/logos/logo.svg`;
@@ -13,12 +13,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-center items-center">
-        <nav
-          className="flex h-[140px] z-10
-         justify-between items-center  
-         fixed top-0  w-full
-         "
-        >
+        <nav className="Navbar flex h-[140px] z-10 justify-between items-center fixed top-0 w-full py-4 px-4">
           <Link
             to="/"
             className="text-center  font-bold  md:ml-6 md:mr-10 mx-2 flex items-center text-[#0A4D34] font-nunito text-xl"
@@ -69,11 +64,11 @@ const Navbar = () => {
             isOpen ? "block" : "hidden"
           } overflow-hidden transition-display duration-1000 ease-in-out flex flex-col lg:hidden z-20 w-full shadow-md min-h-screen fixed  top-0 bg-lightPrimary/40 right-0`}
         >
-          <div className="bg-lightPrimary fixed top-0 right-0 w-2/3 h-full">
+          <div className="bg-black fixed top-0 right-0 w-2/3 h-full">
             <div onClick={() => setIsOpen(false)} className=" lg:hidden m-2">
               <img src={crossMark} alt="hamburger" width={30} />
             </div>
-            <ul className=" font-nunito  text-darkSecondary flex flex-col gap-2   items-center ">
+            <ul className=" font-nunito  text-white flex flex-col gap-2   items-center ">
               {NavItem.map((item) => (
                 <li
                   key={item.title}
