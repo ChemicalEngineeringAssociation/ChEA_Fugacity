@@ -31,8 +31,7 @@ function Form() {
     email: "",
     contact: "",
     college: "",
-    password: "",
-    repeatPassword: "",
+    events: "",
   };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
@@ -43,7 +42,18 @@ function Form() {
     console.log(name, value);
     setFormValues({ ...formValues, [name]: value });
   };
+  const handleEventsChange = (e) => {
+    const { options } = e.target;
 
+    const selectedEvents = [];
+    for (let i = 0; i < options.length; i++) {
+      if (options[i].selected) {
+        console.log(options[i].value);
+        selectedEvents.push(options[i].value);
+      }
+    }
+    setFormValues({ ...formValues, events: selectedEvents });
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
@@ -74,15 +84,8 @@ function Form() {
     if (!values.college) {
       errors.college = "College name is required!";
     }
-    if (!values.password) {
-      errors.password = "Password is required!";
-    } else if (values.password.length < 4) {
-      errors.password = "Password must be more than 4 characters!";
-    } else if (values.password.length > 10) {
-      errors.password = "Password cannot exceed more than 10 characters!";
-    }
-    if (values.repeatPassword !== values.password) {
-      errors.repeatPassword = "Passwords do not match!";
+    if (values.events.length === 0) {
+      errors.events = "At least one event should be selected";
     }
     return errors;
   };
@@ -152,33 +155,30 @@ function Form() {
         )}
       </div>
       <div className="mb-5">
-        <Level title="Password" for="password" />
-        <Input
-          type="password"
-          id="password"
-          placeholder="Enter your password"
-          onChange={handleChange}
-          value={formValues.password}
-          name="password"
-        />
-        {formErrors.password && (
-          <p className="text-red-500">{formErrors.password}</p>
+        <Level title="Events" for="events" />
+        <div className="relative">
+          <select
+            id="events"
+            className="rounded-[4px] bg-gray-100 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-[16px] p-2.5"
+            onChange={handleEventsChange}
+            value={formValues.events}
+          >
+            <option value="">Select an event</option>
+            <option value="event1">Event 1</option>
+            <option value="event2">Event 2</option>
+            <option value="event4">Event 3</option>
+            <option value="event4">Event 3</option>
+            <option value="event5">Event 3</option>
+            <option value="event6">Event 3</option>
+            {/* Add more options as needed */}
+          </select>
+        </div>
+        {/* You can handle errors for events selection if needed */}
+        {formErrors.events && (
+          <p className="text-red-500">{formErrors.events}</p>
         )}
       </div>
-      <div className="mb-5">
-        <Level title="Confirm Password" for="repeatPassword" />
-        <Input
-          type="password"
-          id="repeatPassword"
-          placeholder="Repeat your password"
-          onChange={handleChange}
-          value={formValues.repeatPassword}
-          name="repeatPassword"
-        />
-        {formErrors.repeatPassword && (
-          <p className="text-red-500">{formErrors.repeatPassword}</p>
-        )}
-      </div>
+
       <button
         type="submit"
         className=" rounded-[4px] bg-[#20CD8D] text-lightPrimary py-2 font-bold text-xl   hover:bg-[#20CD8D] focus:ring-4 focus:outline-none focus:ring-blue-300  w-full sm:w-auto px-5  text-center"
