@@ -13,12 +13,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-center items-center">
-        <nav
-          className="flex h-[140px] z-10
-         justify-between items-center  
-         fixed top-0  w-full
-         "
-        >
+      <nav className="Navbar flex h-[140px] z-10 justify-between items-center fixed top-0 w-full py-4 px-4">
           <Link
             to="/"
             className="text-center  font-bold  md:ml-6 md:mr-10 mx-2 flex items-center text-[#0A4D34] font-nunito text-xl"
