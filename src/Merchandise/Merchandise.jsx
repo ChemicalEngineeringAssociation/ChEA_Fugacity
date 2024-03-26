@@ -8,6 +8,8 @@ const Merchandise = () => {
   const merch_front = `/images/varsity_(1).png`;
   const merch_back = `/images/varsity_(2).png`;
   const bg = `/images/bg.gif`;
+  const polo_front = `/images/tshirt1.jpeg`;
+  const polo_back = `/images/tshirt2.jpeg`;
   // const [isMore, setIsMore] = useState(false);
   useEffect(() => {
     window.scroll(0, 0);
@@ -30,6 +32,42 @@ const Merchandise = () => {
           proudly unveils the merchandise for 2024!
         </p>
       </div>
+      <h4 className="text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-3 p-4">
+        Polo T-shirt
+      </h4>
+      <div
+        id="Polo"
+        className="flex flex-col gap-2 lg:flex-row justify-around items-center mt-10 max-w-[1000px] mx-auto"
+      >
+        <MerchCard
+          name="Front"
+          position="Summer Merchandise"
+          email="XXXXX@che.iitkgp.ac.in"
+          phone="XXXXXX-XXXXX"
+          url={polo_front}
+        />
+        <MerchCard
+          name="Back"
+          position="Summer Merchandise"
+          email="XX@che.iitkgp.ac.in"
+          phone="XXXXXX-XXXXX"
+          url={polo_back}
+        />
+      </div>
+      <div className="flex justify-center items-center">
+        <button className="px-5 rounded-lg bg-darkPrimary text-lightPrimary py-2  m-2 font-bold text-xl ">
+          <a
+            target="_blank"
+            href="#"
+            rel="noreferrer"
+          >
+            Buy Now
+          </a>
+        </button>
+      </div>
+      <h4 className="text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-3 p-4">
+        Varsity
+      </h4>
       <div
         id="varsity"
         className="flex flex-col gap-2 lg:flex-row justify-around items-center mt-10 max-w-[1000px] mx-auto"
