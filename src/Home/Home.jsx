@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import TypingEffect from "react-typing-effect";
 import "./Home.css";
 import About from "../About/About";
-
 const Home = () => {
   const Fugacity = `/images/logos/Fugacity.webp`;
   const backgroundImage = `/images/Back.png`;
