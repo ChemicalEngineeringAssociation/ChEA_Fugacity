@@ -9,13 +9,13 @@ const Sponsers = () => {
   const ved = `${process.env.PUBLIC_URL}/images/vedanta colored logo.png`;
   const Altamira = `${process.env.PUBLIC_URL}/images/Altamira Logo.png`;
 
-  const [year, setYear] = useState(2023);
+  const [year, setYear] = useState(2024);
   const [isMore, setIsMore] = useState(false);
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
   return (
-    <div className="w-full flex flex-col justify-center items-center  pt-36  bg-black">
+    <div className="w-full flex flex-col justify-center items-center  pt-36 bg-darkSecondary">
       <h1 className="text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-5">
         Sponsors
       </h1>
@@ -73,54 +73,31 @@ const Sponsers = () => {
                 className="w-[70%] text-justify my-5 text-md"
                 onClick={() => setIsMore(false)}
               >
-                
                 <br />
-                
               </div>
             ) : (
-              <div className="w-[70%] text-justify my-5 text-md">
-                
-              </div>
+              <div className="w-[70%] text-justify my-5 text-md"></div>
             )}
           </div>
         )}
 
         {year === 2024 && (
-          <div className="w-full flex flex-col justify-evenly items-center text-lightSecondary font-avenir ">
-              <img src={Altamira} className="w-[40%] rounded-lg" alt="sponsName" />
-            <img src={ved} className="w-[40%] rounded-lg" alt="sponsName" />
-          
-            {isMore ? (
-              <div
-                className="w-[70%] text-justify my-5 text-md"
-                onClick={() => setIsMore(false)}
-              >
-                <p>
-                  
-</p>
-<br />
-<p>
-
-</p>
-</div>
-) : (
-<div className="w-[70%] text-justify my-5 text-md">
-<p>
-
-<button
-className="ml-2 text-slate-500"
-onClick={() => setIsMore(true)}
->
-
-</button>
-</p>
-</div>
-)}
-</div>
-)}
-</div>
-</div>
-);
+          <div className="w-full max-w-[1000px] gap-[30px] p-10 flex flex-col md:flex-row justify-around   items-center text-lightSecondary font-avenir ">
+            <img
+              src={ved}
+              className="w-[100%] md:w-[40%] rounded-lg"
+              alt="sponsName"
+            />
+            <img
+              src={Altamira}
+              className="w-[100%] md:w-[40%] rounded-lg"
+              alt="sponsName"
+            />
+          </div>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Sponsers;

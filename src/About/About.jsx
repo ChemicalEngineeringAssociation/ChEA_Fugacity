@@ -9,12 +9,10 @@ const About = () => {
       className=" w-full bg-black
      "
     >
-       
-       <h1 className="text-3xl font-semibold text-center p-2 pt-4 text-darkMain font-nunito decoration-solid">
+      <h1 className="text-3xl font-semibold text-center p-2 pt-4 text-darkMain font-nunito decoration-solid">
         About Us
-      </h1>  
-      <Structure>
-      </Structure>
+      </h1>
+
       <div className="grid sm:grid-cols-1 lg:grid-cols-3 justify-between p-1 md:p-10">
         {Details.map((item) => (
           <Card

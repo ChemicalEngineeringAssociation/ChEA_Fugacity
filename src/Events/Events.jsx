@@ -7,7 +7,7 @@ const Events = () => {
     window.scroll(0, 0);
   }, []);
   return (
-    <div className="pt-36 flex flex-col justify-center items-center bg-black">
+    <div className="pt-36 flex flex-col justify-center items-center bg-darkSecondary">
       <h1 className="text-center text-3xl md:text-5xl font-bold text-darkMain font-nunito my-5">
         Events
       </h1>
