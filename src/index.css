@@ -139,3 +139,19 @@
     grid-auto-columns: 100%;
   }
 }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.5s ease-in-out;
+}

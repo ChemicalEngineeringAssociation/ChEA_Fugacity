@@ -34,21 +34,46 @@ function App() {
             </Suspense>
           }
         ></Route>
-        <Route path="/events" element={<Suspense fallback={<Loading />}>
+        <Route
+          path="/events"
+          element={
+            <Suspense fallback={<Loading />}>
               <Events />
-            </Suspense>}></Route>
-        <Route path="/contact" element={<Suspense fallback={<Loading />}>
+            </Suspense>
+          }
+        ></Route>
+        <Route
+          path="/contact"
+          element={
+            <Suspense fallback={<Loading />}>
               <ContactUs />
-            </Suspense>}></Route>
-        <Route path="/merchandise" element={<Suspense fallback={<Loading />}>
+            </Suspense>
+          }
+        ></Route>
+        <Route
+          path="/merchandise"
+          element={
+            <Suspense fallback={<Loading />}>
               <Merchandise />
-        </Suspense>}></Route>
-        <Route path="/Register" element={<Suspense fallback={<Loading />}>
+            </Suspense>
+          }
+        ></Route>
+        <Route
+          path="/Register"
+          element={
+            <Suspense fallback={<Loading />}>
               <Register />
-        </Suspense>}></Route>
-        <Route path="/About" element={<Suspense fallback={<Loading />}>
+            </Suspense>
+          }
+        ></Route>
+        <Route
+          path="/About"
+          element={
+            <Suspense fallback={<Loading />}>
               <About />
-        </Suspense>}></Route>
+            </Suspense>
+          }
+        ></Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
