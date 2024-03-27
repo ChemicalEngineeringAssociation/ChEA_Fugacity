@@ -3,11 +3,15 @@ import Structure from "./structure";
 import Structure2 from "./Structure2";
 
 const About = () => {
+  const backgroundImage = `/images/back_about2.png`;
   return (
     <div
       id="about"
-      className=" w-full bg-black
-     "
+      className=" w-full bg-black"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
+        backgroundSize: "cover",
+      }}
     >
       <h1 className="text-3xl font-semibold text-center p-2 pt-4 text-darkMain font-nunito decoration-solid">
         About Us
