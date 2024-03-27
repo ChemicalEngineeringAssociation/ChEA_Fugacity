@@ -1,10 +1,23 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
+import ScheduleEle from "./scheduleEle";
+import ScheduleEle2 from "./scheduleEle2";
 
 function Schedule() {
+    const [isHovered, setIsHovered1] = useState(false);
+    const [isHovered1, setIsHovered2] = useState(false);
+    const [isHovered2, setIsHovered3] = useState(false);
+    const [isHovered3, setIsHovered4] = useState(false);
+    const [isHovered4, setIsHovered5] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const backgroundImage = `/images/back_about2.png`;
     const [day, setDay] = useState("Day-1");
+    const divStyle = {
+        backgroundColor: isHovered ? 'rgba(0,0,0,0.5)' : 'transparent',
+        transition: 'background-color 0.3s ease',
+        display: 'flex',
+        flexDirection: 'row',
+      };
     useEffect(() => {
         AOS.init({ duration: 2000 });
         const handleResize = () => {
@@ -56,109 +69,27 @@ function Schedule() {
                             }
                         }
                     >
-
-                        <div className="row schedule-item text-white"
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                            }}
-                            data-aos='fade-up'
-                        >
-                            <div className="col-md-2" style={{ fontSize: '1.3rem', marginTop: 'auto', marginBottom: 'auto', marginRight: 30, marginLeft: 20 }}>
-                                <time>09:30 AM</time>
-                            </div>
-                            <div className="col-md-100">
-                                <h4 style={{
-                                    color: 'white',
-                                    fontSize: '1.5rem',
-                                    fontWeight: 'bold'
-                                }}
-                                >Registration</h4>
-                                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
-                            </div>
-                        </div>
-                        <div className="row schedule-item text-white"
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                            }}
-                            data-aos='fade-up'
-                        >
-                            <div className="col-md-2" style={{ fontSize: '1.3rem', marginTop: 'auto', marginBottom: 'auto', marginRight: 30, marginLeft: 20 }}>
-                                <time>09:30 AM</time>
-                            </div>
-                            <div className="col-md-100">
-                                <h4 style={{
-                                    color: 'white',
-                                    fontSize: '1.5rem',
-                                    fontWeight: 'bold'
-                                }}
-                                >Registration</h4>
-                                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
-                            </div>
-                        </div>
-                        <div className="row schedule-item text-white"
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                            }}
-                            data-aos='fade-up'
-                        >
-                            <div className="col-md-2" style={{ fontSize: '1.3rem', marginTop: 'auto', marginBottom: 'auto', marginRight: 30, marginLeft: 20 }}>
-                                <time>09:30 AM</time>
-                            </div>
-                            <div className="col-md-100">
-                                <h4 style={{
-                                    color: 'white',
-                                    fontSize: '1.5rem',
-                                    fontWeight: 'bold'
-                                }}
-                                >Registration</h4>
-                                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
-                            </div>
-                        </div>
-                        <div className="row schedule-item text-white"
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                            }}
-                            data-aos='fade-up'
-                        >
-                            <div className="col-md-2" style={{ fontSize: '1.3rem', marginTop: 'auto', marginBottom: 'auto', marginRight: 30, marginLeft: 20 }}>
-                                <time>09:30 AM</time>
-                            </div>
-                            <div className="col-md-100">
-                                <h4 style={{
-                                    color: 'white',
-                                    fontSize: '1.5rem',
-                                    fontWeight: 'bold'
-                                }}
-                                >Registration</h4>
-                                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
-                            </div>
-                        </div>
-                        <div className="row schedule-item text-white"
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                            }}
-                            data-aos='fade-up'
-                        >
-                            <div className="col-md-2" style={{ fontSize: '1.3rem', marginTop: 'auto', marginBottom: 'auto', marginRight: 30, marginLeft: 20 }}>
-                                <time>09:30 AM</time>
-                            </div>
-                            <div className="col-md-100">
-                                <h4 style={{
-                                    color: 'white',
-                                    fontSize: '1.5rem',
-                                    fontWeight: 'bold'
-                                }}
-                                >Registration</h4>
-                                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
-                            </div>
-                        </div>
-
-
+                        {/* <ScheduleEle time="09:30 AM" event="Registration" description="Fugit voluptas iusto maiores temporibus autem numquam magnam." /> */}
+                        <ScheduleEle 
+                        time="10:00 AM" 
+                        event="Inauguration" 
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                        <ScheduleEle2 
+                        time="11:00 AM" 
+                        event="Keynote" 
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                        <ScheduleEle 
+                        time="12:00 PM" 
+                        event="Lunch" 
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                        <ScheduleEle2 
+                        time="01:00 PM" 
+                        event="Workshop" 
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                        <ScheduleEle 
+                        time="03:00 PM" 
+                        event="Networking" 
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
                     </div>
 
                 </>
@@ -167,8 +98,28 @@ function Schedule() {
                 <>
                     <div
                         id="Day-2"
-                        className="flex flex-col gap-2 lg:flex-row justify-around items-center mt-10 max-w-[1000px] mx-auto">
+                        className="flex flex-col gap-2  justify-around items-center mt-10 max-w-[1000px] mx-auto">
                         {/* Enter Day-2 Schedule */}
+                        <ScheduleEle2 
+                        time="10:00 AM" 
+                        event="Inauguration" 
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                        <ScheduleEle 
+                        time="11:00 AM" 
+                        event="Keynote" 
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                        <ScheduleEle2 
+                        time="12:00 PM" 
+                        event="Lunch" 
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                        <ScheduleEle 
+                        time="01:00 PM" 
+                        event="Workshop" 
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                        <ScheduleEle2
+                        time="03:00 PM" 
+                        event="Networking" 
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
                     </div>
                 </>
             )}

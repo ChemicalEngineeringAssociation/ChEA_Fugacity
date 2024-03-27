@@ -8,6 +8,10 @@ export const NavItem=[
     href:'/events'
   },
   {
+    title:'Schedule', 
+    href:'/Schedule'
+  },
+  {
     title:'Sponsors',
     href:'/sponsors'
   },
@@ -23,4 +27,5 @@ export const NavItem=[
     title:'Contact Us',
     href:"/contact"
   },
+  
 ]
