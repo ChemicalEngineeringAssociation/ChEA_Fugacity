@@ -11,11 +11,11 @@ const Home = () => {
   }, []);
 
   return (
-    <div id="home" className="app-container">
+    <div id="home">
       <section
         className=" h-[100vh]  flex justify-center items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${backgroundImage})`,
           backgroundSize: "cover",
         }}
       >
@@ -46,12 +46,12 @@ const Home = () => {
             >
               Register Now
             </a>
-            <div className="flex mt-10 justify-around w-full items-center">
+            {/* <div className="flex mt-10 justify-around w-full items-center">
               <h1 className="text-white text-lg">Sponsored By</h1>
               <img src={Fugacity} className="" alt="logo" width={100} />
               <img src={Fugacity} className="" alt="logo" width={100} />
               <img src={Fugacity} className="" alt="logo" width={100} />
-            </div>
+            </div> */}
           </div>
 
           <div className=" flex justify-center items-center  sm:w-full md:w-1/2 h-full col-lg-6  order-1 order-lg-2 header-img text-center">
