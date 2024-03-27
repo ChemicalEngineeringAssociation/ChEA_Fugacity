@@ -1,7 +1,7 @@
 import React from "react";
-import { Details } from "./details";
-import Card from "./Card";
 import Structure from "./structure";
+import Structure2 from "./Structure2";
+
 const About = () => {
   return (
     <div
@@ -13,9 +13,22 @@ const About = () => {
        <h1 className="text-3xl font-semibold text-center p-2 pt-4 text-darkMain font-nunito decoration-solid">
         About Us
       </h1>  
-      <Structure>
-      </Structure>
-      <div className="grid sm:grid-cols-1 lg:grid-cols-3 justify-between p-1 md:p-10">
+      <Structure
+      head="Indian Institute of Technology Kharagpur"
+      text = "Indian Institute of Technology Kharagpur (IIT Kharagpur) is a public technical university established by the government of India in Kharagpur, West Bengal, India. Established in 1951, the institute is the first of the IITs to be established and is recognised as an Institute of National Importance. In 2019 it was awarded the status of Institute of Eminence by the government of India."
+      url='/images/logos/kgpLogo.svg'
+      />
+      <Structure2
+      head='Indian Institute of Chemical Engineers'
+      text = 'The Indian Institute of Chemical Engineers (IIChE) is the professional body for chemical engineers in India. The headquarter of IIChE is in the campus of Jadavpur University, Kolkata. The organization has 42 regional centers along with 172 student chapters spread throughout India. The institutions membership comprises academics, professionals from the chemical industry, researchers, and students.'
+      url = '/images/logos/logoiiche.svg'
+      />
+      <Structure
+      head='Chemical Engineering Association , IIT Kharagpur'
+      text = 'Chemical Engineering Association, IIT Kharagpur( also known as ChEA-IITKGP) is the Official Student Body of the Department of Chemical Engineering, IIT Kharagpur. At present, the department is deeply involved in activities in the field of Pollution Control, Transport Processes, Coal and Petroleum Technology, and Membrane Processes.'
+      url='/images/logos/logo.svg'
+      />
+      {/* <div className="grid sm:grid-cols-1 lg:grid-cols-3 justify-between p-1 md:p-10">
         {Details.map((item) => (
           <Card
             title={item.title}
@@ -23,7 +36,7 @@ const About = () => {
             logo={item.logo}
           />
         ))}
-      </div>
+      </div> */}
 
       <div className="">
         <h1 className="text-center text-3xl font-bold text-darkMain font-nunito ">
