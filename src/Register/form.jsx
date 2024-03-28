@@ -124,7 +124,7 @@ function Form() {
           <Input
             type="text"
             id="name"
-            placeholder="Bonnie Green"
+            placeholder="eg. Koushal Kumar"
             onChange={handleChange}
             value={formValues.name}
             name="name"
@@ -138,7 +138,7 @@ function Form() {
           <Input
             type="email"
             id="email"
-            placeholder="name@flowbite.com"
+            placeholder="eg. koushalkumar@gmail.com"
             onChange={handleChange}
             value={formValues.email}
             name="email"
@@ -150,9 +150,9 @@ function Form() {
         <Level title="Contact" for="contact" />
         <div className="relative">
           <Input
-            type="number"
+            type="tel"
             id="contact"
-            placeholder="Enter your contact number"
+            placeholder="eg. 9876543210"
             onChange={handleChange}
             value={formValues.contact}
             name="contact"
@@ -168,7 +168,7 @@ function Form() {
           <Input
             type="text"
             id="college"
-            placeholder="Enter your college name"
+            placeholder="eg. IIT Kharagpur"
             onChange={handleChange}
             value={formValues.college}
             name="college"

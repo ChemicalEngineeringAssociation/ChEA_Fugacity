@@ -3,7 +3,7 @@ const codeProblem =  `/images/events/code.jpg`
 const AIML=  `/images/events/ml.jpg`
 const chemInnovation=  `/images/events/case.jpg`
 const aspen =  `/images/events/aspen.webp`
-const chemQuiz=  `/images/events/chemQuiz.webp`
+const chemQuiz=  `/images/events/quiz.jpg`
 const chemEngage=  `/images/events/chemEngage.webp`
 const chemMeme=  `/images/events/meme.jpg`
 const photography =  `/images/events/photography.webp`
@@ -18,7 +18,9 @@ const aspen1=  `/images/events/download.webp`
 const paper= `/images/events/paper.jpg`
 const theatre= `/images/events/theatre.jpg`
 const cross= `/images/events/cross.jpg`
-
+const Crossword = `/images/events/cross.png`
+const Theatre = `/images/events/theatre.png`
+const Paper = `/images/events/paper.png`
 
 const eventDetails=[
   {
@@ -64,17 +66,17 @@ const eventDetails=[
   //   url1:aspen,
   //   url2:aspen1
   // },
-  // {
-  //   title:"QUIZ",
-  //   description1:`ALL CHEMICAL ENGINEERS AND PROCESS DESIGNERS, TAKE NOTE!.`,
-  //   description2:"WE ARE PLEASED TO ANNOUNCE OUR FORTHCOMING ASPEN PLUS SESSION, WHERE YOU WILL LEARN MORE ABOUT THIS SOPHISTICATED PROCESS MODELLING SOFTWARE.",
-  //   description3:"THIS SESSION IS IDEAL WHETHER YOU ARE A NOVICE OR HAVE PRIOR EXPERIENCE WITH ASPEN PLUS. OUR SKILLED EDUCATORS WILL WALK YOU THROUGH THE PROGRAMME, DEMONSTRATING HOW TO CREATE PROCESS MODELS, SIMULATE DIFFERENT SITUATIONS, AND ANALYSE THE OUTCOMES",
-  //   description4:"REGISTER NOW TO DEVELOP YOUR PROCESS SIMULATION KNOWLEDGE AND ABILITIES.",
-  //   description5:"THERE ARE JUST A FEW SEATS LEFT, SO JOIN UP TODAY AT DON'T PASS UP THIS CHANCE TO IMPROVE YOUR ASPEN PLUS KNOWLEDGE!",
-
-  //   url1:chemQuiz,
-  //   url2:quiz
-  // },
+  {
+    title:"CHEM QUIZ",
+    description1:`ALL CHEMICAL ENGINEERS AND PROCESS DESIGNERS, TAKE NOTE!. TEST YOUR CHEMICAL ENGINEERING KNOWLEDGE WITH OUR UPCOMING CHEM QUIZ EVENT!`,
+    description2:"",
+    description3:"",
+    description4:"",
+    description5:"",
+    url1:chemQuiz,
+    url2:quiz,
+    link:'https://unstop.com/quiz/chem-quiz-iit-kharagpur-941588',
+  },
   // {
   //   title:"DEBATE",
   //   description1:`ATTENTION ALL CHEMICAL ENGINEERING STUDENTS AND ENTHUSIASTS!`,
@@ -114,7 +116,7 @@ const eventDetails=[
     description4:"",
     description5:"",
     url1:paper,
-    url2:paper,
+    url2:Paper,
     link:'https://unstop.com/p/paper-presentation-iit-kharagpur-940974',
   },
   {
@@ -125,7 +127,7 @@ const eventDetails=[
     description4:"",
     description5:"",
     url1:theatre,
-    url2:theatre,
+    url2:Theatre,
     link:'https://unstop.com/events/chem-threatre-iit-kharagpur-941552',
   },
   {
@@ -136,7 +138,7 @@ const eventDetails=[
     description4:"",
     description5:"",
     url1:cross,
-    url2:cross,
+    url2:Crossword,
     link:'https://unstop.com/p/chem-crosswords-iit-kharagpur-941615',
   },
 ]
