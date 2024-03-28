@@ -27,65 +27,92 @@ export const Input = (props) => {
 
 function Form() {
   const initialValues = {
-    username: "",
+    name: "",
     email: "",
     contact: "",
     college: "",
-    events: "",
   };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
-  const [isSubmit, setIsSubmit] = useState(false);
+  const [serverMessage, setServerMessage] = useState("");
 
   const handleChange = (e, name) => {
     const { value } = e.target;
-    console.log(name, value);
     setFormValues({ ...formValues, [name]: value });
   };
-  const handleEventsChange = (e) => {
-    const { options } = e.target;
 
-    const selectedEvents = [];
-    for (let i = 0; i < options.length; i++) {
-      if (options[i].selected) {
-        console.log(options[i].value);
-        selectedEvents.push(options[i].value);
-      }
-    }
-    setFormValues({ ...formValues, events: selectedEvents });
-  };
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(process.env.BACKEND_URL);
     setFormErrors(validate(formValues));
-    setIsSubmit(true);
-  };
 
-  useEffect(() => {
-    console.log(formErrors);
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
+    // Check if there are any validation errors before submitting the form
+    if (Object.keys(formErrors).length !== 0) {
+      // Construct the request body
+      const requestBody = {
+        name: formValues.name,
+        email: formValues.email,
+        contact: formValues.contact,
+        college: formValues.college,
+      };
+
+      // Perform the POST request
+      fetch("http://localhost:5000/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestBody),
+      })
+        .then((response) => {
+          if (response.ok) {
+            // Registration successful, handle success
+            console.log("User registered successfully");
+            setServerMessage("User registered successfully");
+            setFormValues(initialValues);
+            // Do something here like redirecting or showing a success message
+          } else {
+            // Registration failed, handle error
+            return response.json(); // Parse response body as JSON
+          }
+        })
+        .then((data) => {
+          // Check if the error message is "Missing fields" or "User already exists"
+          if (
+            data &&
+            (data.message === "Missing fields" ||
+              data.message === "User already exists")
+          ) {
+            // Handle missing fields or user already exists error
+            console.error("Registration failed:", data.message);
+            setServerMessage(data.message);
+            // Do something here like displaying an error message to the user
+          }
+        })
+        .catch((error) => {
+          console.error("Error registering user:", error);
+          setServerMessage("Registration failed");
+          // Handle network errors or other unexpected errors
+        });
     }
-  }, [formErrors, formValues, isSubmit]);
+  };
 
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    if (!values.username) {
-      errors.username = "Username is required!";
+    if (!values.name || values.name.length < 3) {
+      errors.name = "Username is required!";
     }
     if (!values.email) {
       errors.email = "Email is required!";
     } else if (!regex.test(values.email)) {
       errors.email = "This is not a valid email format!";
     }
-    if (!values.contact) {
+    if (!values.contact || values.contact.length < 10) {
       errors.contact = "Contact number is required!";
     }
-    if (!values.college) {
+    if (!values.college || values.college.length < 3) {
       errors.college = "College name is required!";
-    }
-    if (values.events.length === 0) {
-      errors.events = "At least one event should be selected";
     }
     return errors;
   };
@@ -93,20 +120,18 @@ function Form() {
   return (
     <form className="max-w-md p-5 mx-auto" onSubmit={handleSubmit}>
       <div className="mb-5">
-        <Level title="Name" for="username" />
+        <Level title="Name" for="name" />
         <div className="flex">
           <Input
             type="text"
-            id="username"
+            id="name"
             placeholder="Bonnie Green"
             onChange={handleChange}
-            value={formValues.username}
-            name="username"
+            value={formValues.name}
+            name="name"
           />
         </div>
-        {formErrors.username && (
-          <p className="text-red-500">{formErrors.username}</p>
-        )}
+        {formErrors.name && <p className="text-red-500">{formErrors.name}</p>}
       </div>
       <div className="mb-5">
         <Level title="Email" for="email" />
@@ -126,7 +151,7 @@ function Form() {
         <Level title="Contact" for="contact" />
         <div className="relative">
           <Input
-            type="text"
+            type="number"
             id="contact"
             placeholder="Enter your contact number"
             onChange={handleChange}
@@ -154,34 +179,12 @@ function Form() {
           <p className="text-red-500">{formErrors.college}</p>
         )}
       </div>
-      <div className="mb-5">
-        <Level title="Events" for="events" />
-        <div className="relative">
-          <select
-            id="events"
-            className="rounded-[4px] bg-gray-100 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-[16px] p-2.5"
-            onChange={handleEventsChange}
-            value={formValues.events}
-          >
-            <option value="">Select an event</option>
-            <option value="event1">Event 1</option>
-            <option value="event2">Event 2</option>
-            <option value="event4">Event 3</option>
-            <option value="event4">Event 3</option>
-            <option value="event5">Event 3</option>
-            <option value="event6">Event 3</option>
-            {/* Add more options as needed */}
-          </select>
-        </div>
-        {/* You can handle errors for events selection if needed */}
-        {formErrors.events && (
-          <p className="text-red-500">{formErrors.events}</p>
-        )}
-      </div>
-
+      {serverMessage && (
+        <p className="text-red-500 my-2 text-center">{serverMessage}</p>
+      )}
       <button
         type="submit"
-        className=" rounded-[4px] bg-[#20CD8D] text-lightPrimary py-2 font-bold text-xl   hover:bg-[#20CD8D] focus:ring-4 focus:outline-none focus:ring-blue-300  w-full sm:w-auto px-5  text-center"
+        className=" rounded-[4px] bg-[#20CD8D] text-lightPrimary py-2 font-bold text-xl  hover:bg-[#20CD8D] focus:ring-4 focus:outline-none focus:ring-blue-300  w-full px-5  text-center"
       >
         Submit
       </button>
