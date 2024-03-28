@@ -16,25 +16,30 @@ const EventCard = (props) => {
         />
       </div>
       <div className="lg:w-1/2 flex justify-center flex-col h-full p-4 lg:p-10 ">
-        <h3 className="text-center font-nunito text-darkMain text-2xl underline mb-5">{props.title}</h3>
+        <h3 className="text-center font-nunito text-darkMain text-2xl underline mb-5">
+          {props.title}
+        </h3>
         <p className="font-avenir text-lightSecondary">{props.description1}</p>
         <p className="font-avenir text-lightSecondary">{props.description2}</p>
         <p className="font-avenir text-lightSecondary">{props.description3}</p>
         <p className="font-avenir text-lightSecondary">{props.description4}</p>
         <p className="font-avenir text-lightSecondary">{props.description5}</p>
-          <button className="rounded-[4px] bg-blue-500 mt-5 text-lightPrimary py-2 font-bold text-xl hover:bg-[#20CD8D] focus:ring-4 focus:outline-none focus:ring-blue-200 sm:w-auto px-5 text-center"
+        <button
+          className="rounded-[4px] bg-blue-500 mt-5 text-lightPrimary py-2 font-bold text-xl hover:bg-[#20CD8D] focus:ring-4 focus:outline-none focus:ring-blue-200 sm:w-auto px-5 text-center"
           style={{
             width: "fit-content",
             alignItems: "center",
             marginLeft: "auto",
             marginRight: "auto",
           }}
-          >
-            <a href={props.link} target="blank">Register here</a>
-          </button>
-              </div>
-            </div>
-          );
+        >
+          <a href={props.link} target="blank">
+            Register here
+          </a>
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default EventCard;

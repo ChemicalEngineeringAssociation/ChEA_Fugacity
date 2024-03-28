@@ -1,9 +1,15 @@
 import React from "react";
 
 const VideoPlayer = () => {
-    const backgroundImage = `/images/bg3.gif`;
+  const backgroundImage = `/images/bg3.gif`;
   return (
-    <section style={{ padding: "20% 10%",backgroundColor: "#1f2937",backgroundSize: 'cover' }}>
+    <section
+      style={{
+        padding: "20% 10%",
+        backgroundColor: "#1f2937",
+        backgroundSize: "cover",
+      }}
+    >
       <div style={{ display: "flex", alignItems: "center" }}>
         <div style={{ flex: 1, paddingRight: "20px" }}>
           <video width="900" height="560" controls>
@@ -14,8 +20,8 @@ const VideoPlayer = () => {
         <div style={{ flex: 1 }}>
           <h2>Text on the right side</h2>
           <p>
-            This is some text content that is aligned to the right of the
-            video. You can add more text or any other components here.
+            This is some text content that is aligned to the right of the video.
+            You can add more text or any other components here.
           </p>
         </div>
       </div>
@@ -23,12 +29,12 @@ const VideoPlayer = () => {
   );
 };
 
-function App() {
-  return (
-    <div className="App">
-      <VideoPlayer />
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div className="App">
+//       <VideoPlayer />
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;

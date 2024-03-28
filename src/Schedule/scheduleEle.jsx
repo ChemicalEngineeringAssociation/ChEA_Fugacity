@@ -18,24 +18,18 @@ function ScheduleEle(props) {
   return (
     <>
       <div
-        className="row flex flex-row schedule-item text-white hover:bg-transparent p-[6px] rounded"
+        className="row w-full flex flex-row schedule-item text-white p-[3px] md:p-[6px] rounded"
         style={{
-          backgroundColor: props.alternate
-            ? "rgba(0,0,0,0.5)"
-            : isHovered
-            ? "transparent"
-            : "rgba(0,0,0,0.5)",
+          backgroundColor: isHovered ? "transparent" : "rgba(0,0,0,0.5)",
           transition: "background-color 0.3s ease",
-          width: !isMobile ? "70%" : "100%",
         }}
-        //data-aos="fade-up"
+        data-aos="fade-up"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <div
-          //   className="col-md-2"
+          className="col-md-2 text-lg w-[20%]"
           style={{
-            fontSize: "1rem",
             marginTop: "auto",
             marginBottom: "auto",
             marginRight: 30,
@@ -44,18 +38,16 @@ function ScheduleEle(props) {
         >
           <time>{props.time}</time>
         </div>
-        <div className="col-md-100">
+        <div className="col-md-100 w-[80%]">
           <h4
             style={{
-              //   color: "white",
-              fontSize: "1.3rem",
               fontWeight: "bold",
             }}
-            className="bg text-darkMain"
+            className="bg text-darkMain text-xl"
           >
             {props.event}
           </h4>
-          <p>{props.description}</p>
+          <p className="text-[16px]">{props.description}</p>
         </div>
       </div>
       <hr
