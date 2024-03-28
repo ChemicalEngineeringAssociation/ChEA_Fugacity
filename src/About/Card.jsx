@@ -7,9 +7,11 @@ export default function Card(props) {
         <img
           loading="lazy"
           src={props.logo}
-          alt=""
+          alt={props.title}
           className="object-cover bg-white rounded-md"
           width={200}
+          height={200}
+          title={props.title}
         />
       </div>
       <div className="p-3 md:p-4 text-center">

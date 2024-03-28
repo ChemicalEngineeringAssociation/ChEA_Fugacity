@@ -53,9 +53,9 @@ const ContactUs = () => {
           url={proffIncharge}
         />
       </div>
-      <h1 className="text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-3 p-4">
+      <h2 className="text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-3 p-4">
         Our Team
-      </h1>
+      </h2>
 
       <div className="flex justify-center items-center">
         <CardContact
@@ -90,9 +90,9 @@ const ContactUs = () => {
           url={rupesh}
         />
       </div>
-      <h1 className="text-center font-nunito text-darkMain  text-2xl font-bold my-3 p-4 underline">
+      <h3 className="text-center font-nunito text-darkMain  text-2xl font-bold my-3 p-4 underline">
         Team Heads
-      </h1>
+      </h3>
 
       <div
         id="tech"

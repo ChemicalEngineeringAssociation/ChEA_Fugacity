@@ -9,16 +9,17 @@ const EventCard = (props) => {
       <div className="w-full lg:w-1/2 p-3 lg:p-20">
         <img
           src={props.url}
-          alt="img"
+          alt={props.title}
           height={450}
           width={450}
           loading="lazy"
+          title={props.title}
         />
       </div>
       <div className="lg:w-1/2 flex justify-center flex-col h-full p-4 lg:p-10 ">
-        <h3 className="text-center font-nunito text-darkMain text-2xl underline mb-5">
+        <h2 className="text-center font-nunito text-darkMain text-2xl underline mb-5">
           {props.title}
-        </h3>
+        </h2>
         <p className="font-avenir text-lightSecondary">{props.description1}</p>
         <p className="font-avenir text-lightSecondary">{props.description2}</p>
         <p className="font-avenir text-lightSecondary">{props.description3}</p>

@@ -39,7 +39,7 @@ function ScheduleEle2(props) {
           <time>{props.time}</time>
         </div>
         <div className="col-md-100 w-[75%]">
-          <h4
+          <h2
             style={{
               //   color: "white",
               //   fontSize: "1.3rem",
@@ -48,7 +48,7 @@ function ScheduleEle2(props) {
             className="bg text-darkMain text-xl"
           >
             {props.event}
-          </h4>
+          </h2>
           <p className="text-[16px]">{props.description}</p>
         </div>
       </div>

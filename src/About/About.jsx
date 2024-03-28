@@ -13,9 +13,9 @@ const About = () => {
       }}
     >
       <div className="max-w-[1200px] mx-auto">
-        <h1 className="text-3xl font-semibold text-center p-2 pt-4 text-darkMain font-nunito decoration-solid">
+        <h3 className="text-3xl font-semibold text-center p-2 pt-4 text-darkMain font-nunito decoration-solid">
           About Us
-        </h1>
+        </h3>
         <Structure
           head="Indian Institute of Technology Kharagpur"
           text="Indian Institute of Technology Kharagpur (IIT Kharagpur) is a public technical university established by the government of India in Kharagpur, West Bengal, India. Established in 1951, the institute is the first of the IITs to be established and is recognised as an Institute of National Importance. In 2019 it was awarded the status of Institute of Eminence by the government of India."
@@ -43,9 +43,9 @@ const About = () => {
       </div> */}
 
         <div className="">
-          <h1 className="text-center text-3xl font-bold text-darkMain font-nunito ">
+          <h2 className="text-center text-3xl font-bold text-darkMain font-nunito ">
             Our Vision
-          </h1>
+          </h2>
           <div className="p-4 md:p-10 text-slate-400 font-avenir text-md">
             <div className=" text-justify">
               <p>

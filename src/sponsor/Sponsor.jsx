@@ -51,23 +51,43 @@ const Sponsers = () => {
             <img
               className="bg-white w-[15em] h-[13em] p-5 rounded-md mx-2 mb-3"
               src={logoIiiche}
-              alt="sponsName"
+              alt="The Indian Institute of Chemical Engineers logo"
+              title="The Indian Institute of Chemical Engineers logo"
+              height={100}
+              width={100}
+              loading="lazy"
             />
             <img
               className="bg-white w-[15em] h-[13em] p-5 rounded-md mx-2 mb-3"
               src={gamaLogo}
-              alt="sponsName"
+              alt="gamaLogo"
+              title="gamaLogo"
+              width={100}
+              height={100}
+              loading="lazy"
             />
             <img
               className="bg-white w-[15em] h-[13em] p-5 rounded-md  mx-2 mb-3"
               src={msTeamLogo}
-              alt="sponsName"
+              alt="msteamLogo"
+              title="msteamLogo"
+              width={100}
+              height={100}
+              loading="lazy"
             />
           </div>
         )}
         {year === 2023 && (
           <div className="w-full flex flex-col justify-evenly items-center text-lightSecondary font-avenir ">
-            <img src={nfit} className="w-[70%]  rounded-lg " alt="sponsName" />
+            <img
+              src={nfit}
+              className="w-[70%]  rounded-lg "
+              alt="nfitLogo"
+              title="nfitLogo"
+              width={100}
+              height={100}
+              loading="lazy"
+            />
             {isMore ? (
               <div
                 className="w-[70%] text-justify my-5 text-md"
@@ -86,12 +106,20 @@ const Sponsers = () => {
             <img
               src={ved}
               className="w-[100%] md:w-[40%] rounded-lg"
-              alt="sponsName"
+              alt="vedantaLogo"
+              title="vedantaLogo"
+              width={100}
+              height={100}
+              loading="lazy"
             />
             <img
               src={Altamira}
               className="w-[100%] md:w-[40%] rounded-lg"
-              alt="sponsName"
+              alt="altamiraLogo"
+              title="altamiraLogo"
+              height={100}
+              width={100}
+              loading="lazy"
             />
           </div>
         )}

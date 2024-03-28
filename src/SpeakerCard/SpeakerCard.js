@@ -9,6 +9,10 @@ const SpeakerCard = ({ speaker }) => {
       <img
         src={image}
         alt={name}
+        title={name}
+        width={100}
+        height={100}
+        loading="lazy"
         className="w-full h-full object-cover rounded-lg transition-transform duration-300 transform scale-100 hover:scale-105"
       />
       <div className="absolute bottom-0 left-0 right-0 bg-black text-white z-10 p-2 rounded-b-lg transition-transform duration-300 opacity-0 pointer-events-none hover:opacity-100 transform translate-y-full">

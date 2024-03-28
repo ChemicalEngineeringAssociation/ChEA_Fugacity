@@ -47,15 +47,15 @@ const Home = () => {
         <div className="flex w-full mt-32 lg:mt-32 lg:h-[80%] flex-col lg:flex-row justify-around">
           <div className="flex  items-center flex-col h-[40vh] md:h-full sm:w-full lg:w-1/2 p-3 text-center">
             <section className="relative w-full h-[60%] flex justify-center items-center text-center">
-              <h2
+              <h1
                 style={{ WebkitTextStroke: "2px #f7f7f7" }}
                 className="text-transparent text-[6em] md:text-[8em] absolute"
               >
                 Fugacity{" "}
-              </h2>
-              <h2 className="animatEffect text-blue-500 text-[6em] md:text-[8em] absolute">
+              </h1>
+              <h1 className="animatEffect text-blue-500 text-[6em] md:text-[8em] absolute">
                 Fugacity{" "}
-              </h2>
+              </h1>
             </section>
             <h2 className="text-xl md:text-2xl font-bold mt-5 text-[#B3B3B3] font-avenir">
               30th March 2023-31st March 2023
@@ -68,7 +68,15 @@ const Home = () => {
             </a>
           </div>
           <div className="flex justify-center self-center items-center md:w-1/2 h-full text-center">
-            <img src={Fugacity} className="" alt="logo" width={400} />
+            <img
+              src={Fugacity}
+              className=""
+              loading="lazy"
+              alt="fugacity logo"
+              title="fugacity logo"
+              width={400}
+              height={400}
+            />
           </div>
         </div>
         {/* <hr
@@ -77,12 +85,26 @@ const Home = () => {
             backgroundColor: "transparent",
           }}
         ></hr> */}
-        <div className="flex h-[15%] lg:bg-black flex-col p-5 gap-4 max-w-[700px] mb-12 lg:flex-row justify-around">
-          <h1 className="text-white font-bold text-center text-2xl my-auto">
+        <div className="flex h-[15%] lg:bg-black flex-col p-5 gap-4 max-w-[700px] mb-12 md:flex-row justify-around">
+          <h2 className="text-white font-bold text-center text-2xl my-auto">
             Sponsored By:
-          </h1>
-          <img src={ved} alt="" />
-          <img src={Altamira} alt="" />
+          </h2>
+          <img
+            src={ved}
+            alt="vedanta logo"
+            title="vedanta logo"
+            height={100}
+            width={200}
+            loading="lazy"
+          />
+          <img
+            src={Altamira}
+            alt="altmira logo"
+            title="altmira logo"
+            height={200}
+            width={200}
+            loading="lazy"
+          />
         </div>
       </section>
       <About />

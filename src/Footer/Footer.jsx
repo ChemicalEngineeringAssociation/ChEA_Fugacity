@@ -16,7 +16,14 @@ const Footer = () => {
     >
       <div className="flex justify-center items-center flex-col">
         <div className="flex justify-center items-center flex-col">
-          <img src={logo} alt="" width={200} />
+          <img
+            src={logo}
+            alt="CheaLogo"
+            title="CheaLogo"
+            width={200}
+            height={200}
+            loading="lazy"
+          />
           <h3 className="text-2xl text-darkSecondary font-bold font-nunito mb-2 text-center">
             Chemical Engineering Association
           </h3>

@@ -21,8 +21,10 @@ const Navbar = () => {
             <img
               className="inline rounded-full  shadow-white"
               src={logo}
-              alt="logo"
+              alt="CheaLogo"
               width="100"
+              title="CheaLogo"
+              height={100}
             />
             {/* <h1 className="md:ml-3 lg:text-2xl ">
 
@@ -37,7 +39,13 @@ const Navbar = () => {
               isOpen ? "hidden" : "block"
             } transition-all duration-300 ease-in-out lg:hidden mr-4`}
           >
-            <img src={hamburger} alt="hamburger" width={40} />
+            <img
+              src={hamburger}
+              alt="hamburger"
+              title="hamburger"
+              width={40}
+              height={40}
+            />
           </div>
 
           <ul className="hidden font-nunito text-white lg:flex flex-col md:flex-row flex-1 justify-evenly items-10 max-w-[1000px]">
@@ -66,7 +74,13 @@ const Navbar = () => {
         >
           <div className="bg-black fixed top-0 right-0 w-2/3 h-full">
             <div onClick={() => setIsOpen(false)} className=" lg:hidden m-2">
-              <img src={crossMark} alt="hamburger" width={30} />
+              <img
+                src={crossMark}
+                alt="hamburger"
+                title="crossmark"
+                width={30}
+                height={30}
+              />
             </div>
             <ul className=" font-nunito  text-white flex flex-col gap-2   items-center ">
               {NavItem.map((item) => (
