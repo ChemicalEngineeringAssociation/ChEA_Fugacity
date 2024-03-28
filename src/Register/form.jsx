@@ -43,7 +43,6 @@ function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(process.env.BACKEND_URL);
     setFormErrors(validate(formValues));
 
     // Check if there are any validation errors before submitting the form
