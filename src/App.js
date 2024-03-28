@@ -13,6 +13,7 @@ import Footer from "./Footer/Footer";
 import { Suspense, lazy } from "react";
 import Loading from "./Loading";
 import About from "./About/About.jsx";
+import Schedule from "./Schedule/schedule.jsx";
 
 const ContactUs = lazy(() => import("./ContactUs/ContactUs"));
 const Events = lazy(() => import("./Events/Events"));
@@ -39,6 +40,14 @@ function App() {
           element={
             <Suspense fallback={<Loading />}>
               <Events />
+            </Suspense>
+          }
+        ></Route>
+        <Route
+          path="/Schedule"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Schedule />
             </Suspense>
           }
         ></Route>
