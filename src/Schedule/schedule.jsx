@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import ScheduleEle from "./scheduleEle";
+import ScheduleEle2 from "./scheduleEle2";
 
 function Schedule() {
   const [isHovered, setIsHovered1] = useState(false);
@@ -53,80 +54,95 @@ function Schedule() {
         </button>
       </div>
 
-      {day === "Day-1" && (
-        <>
-          <div
-            id="Day-1"
-            className="flex flex-col gap-2 justify-around items-center mt-10 max-w-[800px] rounded-[4px] p-4 bg-darkPrimary mx-auto"
-            role="tabpanel"
-            style={{
-              position: "relative",
-            }}
-          >
-            <ScheduleEle
-              time="10:00 AM"
-              event="Inauguration"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-            <ScheduleEle
-              time="11:00 AM"
-              event="Keynote"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-            <ScheduleEle
-              time="12:00 PM"
-              event="Lunch"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-            <ScheduleEle
-              time="01:00 PM"
-              event="Workshop"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-            <ScheduleEle
-              time="03:00 PM"
-              event="Networking"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-          </div>
-        </>
-      )}
-      {day === "Day-2" && (
-        <>
-          <div
-            id="Day-2"
-            className="flex flex-col gap-2  justify-around items-center mt-10 max-w-[800px] rounded-[4px] p-4 bg-darkPrimary mx-auto"
-          >
-            <ScheduleEle
-              time="10:00 AM"
-              event="Inauguration"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-            <ScheduleEle
-              time="11:00 AM"
-              event="Keynote"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-            <ScheduleEle
-              time="12:00 PM"
-              event="Lunch"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-            <ScheduleEle
-              time="01:00 PM"
-              event="Workshop"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-            <ScheduleEle
-              time="03:00 PM"
-              event="Networking"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-          </div>
-        </>
-      )}
-    </div>
-  );
-}
+            {day === "Day-1" && (
+                <>
+                    <div
+                        id="Day-1"
+                        className="flex flex-col gap-2 justify-around items-center mt-10 max-w-[1000px] mx-auto" role='tabpanel'
+                        style={
+                            {
+                                position: 'relative',
+                            }
+                        }
+                        data-aos='fade-up'
+                    >
+                        {/* <ScheduleEle time="09:30 AM" event="Registration" description="Fugit voluptas iusto maiores temporibus autem numquam magnam." /> */}
+                        <ScheduleEle 
+                        time="09:30 AM" 
+                        event="Inauguration" 
+                        description="Opening ceremony of Fugacity 2024" />
+                        <ScheduleEle2 
+                        time="10:30 AM" 
+                        event="Paper Presentation" 
+                        description="Paper Presentation by participants" />
+                        <ScheduleEle 
+                        time="12:00 PM" 
+                        event="Chem Meme Challenge" 
+                        description="Meme Review of participants" />
+                        <ScheduleEle2 
+                        time="01:00 PM" 
+                        event="Lunch" 
+                        description="" />
+                        <ScheduleEle 
+                        time="02:30 PM" 
+                        event="Workshop" 
+                        description="Comsol Workshop" />
+                        <ScheduleEle2 
+                        time="04:00 PM" 
+                        event="Industrial Talk" 
+                        description="An hour long session by Prof. Jayanta Chakraborty" />
+                        <ScheduleEle
+                        time="05:00 PM"
+                        event="Code the problem"
+                        description="Code the problem competetion"
+                        />
+                    </div>
+
+                </>
+            )}
+            {day === "Day-2" && (
+                <>
+                    <div
+                        id="Day-2"
+                        className="flex flex-col gap-2  justify-around items-center mt-10 max-w-[1000px] mx-auto"
+                        data-aos='fade-up'
+                        >
+                        {/* Enter Day-2 Schedule */}
+                        <ScheduleEle2 
+                        time="09:00 AM" 
+                        event="ChemIntelligence" 
+                        description="Presentation for Chemintelligence/ ML" />
+                        <ScheduleEle 
+                        time="10:30 AM" 
+                        event="Case Study" 
+                        description="Presentation for Case Study" />
+                        <ScheduleEle2 
+                        time="12:00 PM" 
+                        event="Cross Word Puzzle" 
+                        description="Cross Word Puzzle competetion" />
+                        <ScheduleEle 
+                        time="01:00 PM" 
+                        event="Lunch" 
+                        description="" />
+                        <ScheduleEle2
+                        time="02:30 PM" 
+                        event="Quiz" 
+                        description="Quiz competetion on Chemical Engineering" />
+                        <ScheduleEle
+                        time="03:30 PM"
+                        event="Chem Theatre"
+                        description="Chemical Engineering Theatre"
+                        />
+                        <ScheduleEle2
+                        time="06:00 PM"
+                        event="Dinner"
+                        description=""
+                        />
+                    </div>
+                </>
+            )}
+        </div>
+    );
+};
 
 export default Schedule;
