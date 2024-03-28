@@ -1,0 +1,27 @@
+.SpeakerCard {
+  width: 350px; /* Increased width */
+  height: 350px; /* Increased height */
+  position: relative; /* Add relative positioning */
+  overflow: hidden; /* Hide overflow */
+}
+
+.SpeakerCard:hover .absolute {
+  background-color: #6be3ed; /* Change background color to teal on hover */
+  padding: 20px 20px 60px; /* Increase padding for the band */
+}
+
+.SpeakerCard .absolute {
+  position: absolute; /* Position the element absolutely */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  bottom: 0; /* Align to the bottom */
+  background-color: #2e9aa3; /* Default background color (teal) */
+  color: white; /* Text color */
+  padding: 20px; /* Initial padding */
+  transition: transform 0.3s, padding 0.3s; /* Add transition for smooth movement */
+}
+
+.SpeakerCard .absolute h2 {
+  margin: 0; /* Remove default margin */
+  color: black; /* Change font color to black */
+}
