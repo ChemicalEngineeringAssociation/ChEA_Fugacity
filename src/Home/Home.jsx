@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 // import TypingEffect from "react-typing-effect";
 import "./Home.css";
 import About from "../About/About";
+import Schedule from "../Schedule/schedule";
+
 const Home = () => {
   const Fugacity = `/images/logos/Fugacity.webp`;
   const backgroundImage = `/images/Back.png`;
@@ -60,6 +62,8 @@ const Home = () => {
         </div>
       </section>
       <About />
+      <Schedule/>
+
       {/* <Merchandise/> */}
     </div>
   );
