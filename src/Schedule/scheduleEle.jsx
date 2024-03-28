@@ -28,7 +28,7 @@ function ScheduleEle(props) {
           transition: "background-color 0.3s ease",
           width: !isMobile ? "70%" : "100%",
         }}
-        data-aos="fade-up"
+        //data-aos="fade-up"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
