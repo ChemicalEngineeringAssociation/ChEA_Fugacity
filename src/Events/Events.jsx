@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import eventDetails from "./eventDetails";
 import EventCard from "./EventCard";
 import EventShortCard from "./EventShortCard";
+import AOS from "aos";
 const Events = () => {
   useEffect(() => {
     window.scroll(0, 0);
@@ -20,6 +21,7 @@ const Events = () => {
       <ul className="flex w-full flex-col m-2 lg:m-10 ">
         {eventDetails.map((event) => {
           return (
+            <div>
             <li key={event.title}>
               <EventCard
                 title={event.title}
@@ -29,8 +31,10 @@ const Events = () => {
                 description4={event.description4}
                 description5={event.description5}
                 url={event.url1}
+                link={event.link}
               />
             </li>
+            </div>
           );
         })}
       </ul>

@@ -22,10 +22,14 @@ const EventCard = (props) => {
         <p className="font-avenir text-lightSecondary">{props.description3}</p>
         <p className="font-avenir text-lightSecondary">{props.description4}</p>
         <p className="font-avenir text-lightSecondary">{props.description5}</p>
-        {/* <button className="bg-blue-700 rounded-md p-2 w-1/5 self-center text-lg font-bold cursor-pointer hover::bg-blue-800">Know More</button> */}
-      </div>
-    </div>
-  );
+          <button className="rounded-[4px] bg-blue-600 mt-5 text-lightPrimary py-2 font-bold text-xl hover:bg-[#20CD8D] focus:ring-4 focus:outline-none focus:ring-blue-300 sm:w-auto px-5 text-center"
+          
+          >
+            <a href={props.link}>Register here</a>
+          </button>
+              </div>
+            </div>
+          );
 };
 
 export default EventCard;
