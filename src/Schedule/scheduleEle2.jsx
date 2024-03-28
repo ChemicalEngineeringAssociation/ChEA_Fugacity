@@ -28,7 +28,7 @@ function ScheduleEle2(props) {
         onMouseLeave={() => setIsHovered(false)}
       >
         <div
-          className="col-md-2 text-lg w-[20%]"
+          className="col-md-2 text-lg w-[25%]"
           style={{
             marginTop: "auto",
             marginBottom: "auto",
@@ -38,7 +38,7 @@ function ScheduleEle2(props) {
         >
           <time>{props.time}</time>
         </div>
-        <div className="col-md-100 w-[80%]">
+        <div className="col-md-100 w-[75%]">
           <h4
             style={{
               //   color: "white",

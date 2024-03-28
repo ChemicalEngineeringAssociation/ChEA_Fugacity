@@ -19,7 +19,7 @@ const Sponsers = () => {
       <h1 className="text-center text-3xl md:text-5xl font-bold font-nunito text-darkMain my-5">
         Sponsors
       </h1>
-      <div className="flex justify-center items-center m-5 gap-10">
+      <div className="flex justify-center items-center m-5 gap-5 md:gap-10">
         <button
           className={`px-5 rounded-lg  py-2 bg-darkPrimary text-lightPrimary m-2 font-bold text-xl ${
             year === 2022 && "underline"
