@@ -23,33 +23,23 @@ function Structure(props) {
   const isMobile = windowWidth <= 768;
 
   return (
-    <div
-      style={{
-        position: "relative",
-        marginBottom: 50,
-        marginLeft: isMobile ? 20 : 200,
-        marginRight: isMobile ? 20 : 200,
-      }}
-    >
+    <div className="relative mb-5 border-b md:border-none mx-2 p-4 md:p-6">
       <div
-        style={{ display: "flex", flexDirection: isMobile ? "column" : "row" }}
+        className={`flex flex-col ${
+          props.reverse ? "md:flex-row-reverse" : "md:flex-row"
+        }`}
       >
-        <div
-          style={{ position: "relative", marginRight: isMobile ? 0 : 100 }}
-          data-aos="fade-right"
-        >
+        <div className="relative" data-aos="fade-right">
           <img
             src={props.url}
             alt="PropsImage"
             style={{
               transition: "transform 0.3s",
               transformOrigin: "center",
-              maxWidth: isMobile ? 200 : 300,
-              marginRight: isMobile ? "auto" : 0,
-              marginLeft: isMobile ? "auto" : 0,
             }}
+            className="m-auto md:m-0 max-w-[200px]"
             onMouseEnter={(e) => {
-              e.target.style.transform = "scale(1.2)";
+              e.target.style.transform = "scale(1.1)";
               e.target.style.zIndex = "1";
             }}
             onMouseLeave={(e) => {
@@ -58,23 +48,21 @@ function Structure(props) {
             }}
           />
         </div>
-        <div>
+        <div className="flex flex-col mx-5">
           <div
             style={{
               animation: "slide-in-right 4s ease-in-out",
               animationFillMode: "forwards",
-              marginTop: isMobile ? 20 : 100,
             }}
             data-aos="fade-down"
+            className="mt-10 md:m-0 flex flex-col"
           >
-            <h2
-              style={{ color: "white", fontSize: isMobile ? "20px" : "25px" }}
-              className="font-semibold text-center p-2 pt-4 text-darkMain font-nunito decoration-solid"
-            >
+            <h2 className="font-semibold text-2xl my-5 text-center p-2 pt-4 text-darkMain font-nunito decoration-solid">
               {props.head}
             </h2>
             {isMobile && (
               <p
+                className="text-justify"
                 style={{ color: "white", fontSize: isMobile ? "15px" : "17px" }}
               >
                 {props.text}
@@ -85,6 +73,7 @@ function Structure(props) {
             <div style={{ marginLeft: 20 }} data-aos="fade-down">
               <p
                 style={{ color: "white", fontSize: isMobile ? "15px" : "17px" }}
+                className="text-justify"
               >
                 {props.text}
               </p>

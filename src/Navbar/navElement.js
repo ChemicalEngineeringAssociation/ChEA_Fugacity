@@ -1,31 +1,30 @@
-export const NavItem=[
+export const NavItem = [
   {
-    title:'Home',
-    href:'/'
+    title: "Home",
+    href: "/",
   },
   {
-    title:'Events',
-    href:'/events'
+    title: "Events",
+    href: "/events",
   },
   {
-    title:'Schedule', 
-    href:'/Schedule'
+    title: "Schedule",
+    href: "Schedule",
   },
   {
-    title:'Sponsors',
-    href:'/sponsors'
+    title: "Sponsors",
+    href: "/sponsors",
   },
   {
-    title:'Merchandise',
-    href:'/merchandise'
+    title: "Merchandise",
+    href: "/merchandise",
   },
   {
-    title:'Register Here',
-    href:'/register'
+    title: "Register Here",
+    href: "/register",
   },
   {
-    title:'Contact Us',
-    href:"/contact"
+    title: "Contact Us",
+    href: "/contact",
   },
-  
-]
+];
