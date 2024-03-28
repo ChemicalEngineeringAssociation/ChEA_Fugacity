@@ -32,7 +32,7 @@ const eventDetails=[
   // },
   {
     title:"CODE THE PROBLEM",
-    description1:"",
+    description1:"Join Code the Problem to bridge chemistry and programming, solving real-world challenges with code. Explore molecular modeling, reaction kinetics, and more. Rewrite the future of chemistry with your coding skills!",
     description2: "",
     description3: "",
     description4: "",
@@ -42,7 +42,7 @@ const eventDetails=[
   },
   {
     title:"APPLICATION OF ML IN CHEMICAL ENGINEERING",
-    description1:"",
+    description1:"Join our ML Hackathon, where chemical and data science intersect! Tackle real-world challenges with machine learning, collaborate, innovate, and revolutionize chemistry with your solutions. Join us for an exhilarating journey at the intersection of chemical and cutting-edge technology!",
     description2: "",
     description3: "",
     description4: "",
@@ -52,7 +52,7 @@ const eventDetails=[
   },
   {
     title:"CASE STUDY CHALLENGE",
-    description1:"",
+    description1:"Join our Case Study Challenge, where participants tackle intricate chemical scenarios with analytical precision. Dive into real-world problems like synthesis, reaction optimization, and material design. Use your expertise and problem-solving skills to propose innovative solutions. Join us for a thrilling exploration of chemistry's complexities through practical case studies!",
     description2: "",
     description3: "",
     description4: "",
@@ -93,7 +93,7 @@ const eventDetails=[
   // },
   {
     title:"CHEMICAL MEME CHALLENGE",
-    description1:"",
+    description1:"Join our Chem Meme Challenge for a hilarious fusion of science and comedy! Showcase your creativity and wit with science-infused humor. See who can create the ultimate chemistry meme masterpiece!",
     description2:"",
     description3:"",
     description4:"",
@@ -113,7 +113,7 @@ const eventDetails=[
   // },
   {
     title:"PAPER PRESENTATION",
-    description1:"",
+    description1:"Explore cutting-edge chemistry research at our Paper Presentation Showcase! Engage with researchers unveiling breakthroughs and methodologies shaping the future of the field. Join us for an enlightening journey through the pages of discovery!",
     description2:"",
     description3:"",
     description4:"",
@@ -123,7 +123,7 @@ const eventDetails=[
   },
   {
     title:"CHEM THEATRE",
-    description1:"",
+    description1:"Step into Chem Theatre, where science meets performance art! Craft comedic sketches, poignant poetry, or captivating dramas inspired by chemistry. Let your imagination shine as we celebrate the beauty of chemical through theater. Join us for an unforgettable evening of entertainment and enlightenment!",
     description2:"",
     description3:"",
     description4:"",
@@ -133,7 +133,7 @@ const eventDetails=[
   },
   {
     title:"CROSS WORD PUZZLE",
-    description1:"",
+    description1:"Join our Chem Crosswords challenge! Test your chemical knowledge with clues on elements, compounds, reactions, and more. Conquer the grid with us!",
     description2:"",
     description3:"",
     description4:"",
