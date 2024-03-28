@@ -21,15 +21,6 @@ const cross= `/images/events/cross.jpg`
 
 
 const eventDetails=[
-  // {
-  //   title:"REVERSE BRAINSTORMING",
-  //   description1:`ARE YOU TIRED OF THE SAME OLD BRAINSTORMING TECHNIQUES? WANT TO TRY SOMETHING NEW AND INNOVATIVE?`,
-  //   description2:"THEN JOIN US AT FUGACITY FEST FOR OUR REVERSE BRAINSTORMING COMPETITION!,",
-  //   description3:"HOSTED BY THE CHEMICAL ENGINEERING ASSOCIATION, THIS COMPETITION CHALLENGES PARTICIPANTS TO THINK OUTSIDE THE BOX BY IDENTIFYING AND REVERSING THE PROBLEMS ASSOCIATED WITH A GIVEN TOPIC. IT'S A GREAT OPPORTUNITY TO SHARPEN YOUR CRITICAL THINKING AND PROBLEM-SOLVING SKILLS.",
-  //   description4:"SO GATHER YOUR FRIENDS AND REGISTER FOR THE COMPETITION NOW! WE CAN'T WAIT TO SEE YOUR CREATIVE IDEAS AND INNOVATIVE SOLUTIONS.",
-  //   url1:reverseBrainstorming,
-  //   url2:brainstorming
-  // },
   {
     title:"CODE THE PROBLEM",
     description1:"Join Code the Problem to bridge chemistry and programming, solving real-world challenges with code. Explore molecular modeling, reaction kinetics, and more. Rewrite the future of chemistry with your coding skills!",
@@ -38,27 +29,30 @@ const eventDetails=[
     description4: "",
     description5: "",
     url1:codeProblem,
-    url2:code
+    url2:code,
+    link:'https://unstop.com/hackathons/code-the-problem-iit-kharagpur-941576',
   },
   {
-    title:"APPLICATION OF ML IN CHEMICAL ENGINEERING",
+    title:"MACHINE LEARNING HACKATHON",
     description1:"Join our ML Hackathon, where chemical and data science intersect! Tackle real-world challenges with machine learning, collaborate, innovate, and revolutionize chemistry with your solutions. Join us for an exhilarating journey at the intersection of chemical and cutting-edge technology!",
     description2: "",
     description3: "",
     description4: "",
     description5: "",    
     url1:AIML,
-    url2:ML
+    url2:ML,
+    link:'https://unstop.com/hackathons/machine-learning-hackathon-iit-kharagpur-940973',
   },
   {
-    title:"CASE STUDY CHALLENGE",
+    title:"CHEM-INNOVATION : CASE STUDY CHALLENGE",
     description1:"Join our Case Study Challenge, where participants tackle intricate chemical scenarios with analytical precision. Dive into real-world problems like synthesis, reaction optimization, and material design. Use your expertise and problem-solving skills to propose innovative solutions. Join us for a thrilling exploration of chemistry's complexities through practical case studies!",
     description2: "",
     description3: "",
     description4: "",
     description5: "",
     url1:chemInnovation,
-    url2:caseStudy
+    url2:caseStudy,
+    link:'https://unstop.com/competitions/chem-innovation-case-study-challenge-iit-kharagpur-940958',
   },
   // {
   //   title:"ASPEN PLUS WORKSHOP",
@@ -99,7 +93,8 @@ const eventDetails=[
     description4:"",
     description5:"",
     url1:chemMeme,
-    url2:meme
+    url2:meme,
+    link:'https://unstop.com/quiz/chem-meme-iit-kharagpur-941600',
   },
   // {
   //   title:"PHOTOGRAPHY CHALLENGE",
@@ -119,7 +114,8 @@ const eventDetails=[
     description4:"",
     description5:"",
     url1:paper,
-    url2:paper
+    url2:paper,
+    link:'https://unstop.com/p/paper-presentation-iit-kharagpur-940974',
   },
   {
     title:"CHEM THEATRE",
@@ -129,7 +125,8 @@ const eventDetails=[
     description4:"",
     description5:"",
     url1:theatre,
-    url2:theatre
+    url2:theatre,
+    link:'https://unstop.com/events/chem-threatre-iit-kharagpur-941552',
   },
   {
     title:"CROSS WORD PUZZLE",
@@ -139,7 +136,8 @@ const eventDetails=[
     description4:"",
     description5:"",
     url1:cross,
-    url2:cross
+    url2:cross,
+    link:'https://unstop.com/p/chem-crosswords-iit-kharagpur-941615',
   },
 ]
 export default eventDetails;
