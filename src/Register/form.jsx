@@ -44,9 +44,9 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
-
+    console.log(Object.keys(formErrors).length);
     // Check if there are any validation errors before submitting the form
-    if (Object.keys(formErrors).length !== 0) {
+    if (Object.keys(formErrors).length === 0) {
       // Construct the request body
       const requestBody = {
         name: formValues.name,
@@ -56,7 +56,7 @@ function Form() {
       };
 
       // Perform the POST request
-      fetch("http://localhost:5000/register", {
+      fetch("https://cheaserver.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -117,7 +117,7 @@ function Form() {
   };
 
   return (
-    <form className="max-w-md p-5 mx-auto" onSubmit={handleSubmit}>
+    <form className="max-w-md p-5 mx-auto">
       <div className="mb-5">
         <Level title="Name" for="name" />
         <div className="flex">
@@ -183,6 +183,7 @@ function Form() {
       )}
       <button
         type="submit"
+        onClick={handleSubmit}
         className=" rounded-[4px] bg-[#20CD8D] text-lightPrimary py-2 font-bold text-xl  hover:bg-[#20CD8D] focus:ring-4 focus:outline-none focus:ring-blue-300  w-full px-5  text-center"
       >
         Submit
