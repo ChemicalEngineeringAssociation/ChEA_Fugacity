@@ -58,7 +58,7 @@ const Home = () => {
               </h1>
             </section>
             <h2 className="text-xl md:text-2xl font-bold mt-5 text-[#B3B3B3] font-avenir">
-              30th March 2024-31st March 2024
+              30th March 2024 - 31st March 2024
             </h2>
             <a
               href="/events"
