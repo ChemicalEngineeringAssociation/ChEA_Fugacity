@@ -179,7 +179,9 @@ function Form() {
         )}
       </div>
       {serverMessage && (
-        <p className="text-red-500 my-2 text-center">{serverMessage}</p>
+        <p className={`my-2 text-center ${serverMessage === "User registered successfully" ? "text-green-500" : "text-red-500"}`}>
+          {serverMessage}
+        </p>
       )}
       <button
         type="submit"
